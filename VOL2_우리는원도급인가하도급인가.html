@@ -134,7 +134,7 @@ color:var(--blue-d);font-size:12.5pt;text-align:center;margin:0 0 4mm;flex:1;min
 .band .pfoot .logo-type{color:#fff}
 .band .pfoot .slogan{color:rgba(255,255,255,.7)}
 .pgno{flex:none;margin-top:auto;padding-top:2.4mm;text-align:right;font-size:11.5pt;
-color:rgba(17,71,151,.85);font-weight:300;letter-spacing:.02em}
+color:rgba(17,71,151,.92);font-weight:400;letter-spacing:.02em}
 .pgno b{font-weight:600;color:rgba(17,71,151,1)}
 
 .cover{height:210mm;display:flex;flex-direction:column;padding:18mm 17mm 13mm;position:relative;overflow:hidden}
@@ -507,6 +507,11 @@ padding:1mm 2.6mm;border-radius:99mm;margin-top:-.2mm}
 .sheet.tint-gray .ck:nth-child(odd){background:#fff}
 .sheet.tint-gray .ck:nth-child(even){background:#E8ECF1}
 .sheet.tint-gray blockquote{background:#fff}
+/* 바탕이 깔린 면에서는 표 칸을 흰색으로 띄웁니다 (토큰 「면 바탕」) */
+.sheet.tint-gray tbody td{background:#fff}
+.sheet.tint-gray tbody td:first-child{background:#EAF2FD}
+.sheet.tint-gray td.sub{background:#EDF1F6}
+.sheet.tint-gray td.sub:first-child{background:#DFE6F0}
 
 /* 제목 → 서브카피 간격 통일 */
 .ptitle:has(+ .psub),.ptitle:has(+ .lead),
@@ -1324,7 +1329,7 @@ td .x-sysb{margin-left:1.4mm}
 <div class="pfoot"><a class="logolink" href="#" rel="noopener" target="_blank"><span class="logo"><svg class="logo-sym" viewbox="0 0 38 29"><use href="#kbz-sym"></use></svg><svg aria-label="김반장" class="logo-type" role="img" viewbox="0 0 72 22"><use href="#kbz-type"></use></svg></span></a><span class="slogan">건설 4대보험·퇴직공제 해결사</span><div class="pgno"><b>21</b> / 26</div></div>
 </div>
 
-<div class="sheet pg-rate" id="p22">
+<div class="sheet tint-gray pg-rate" id="p22">
 <div class="topbar"><div class="crumb"><b class="cn">부록 ②</b><span>제도 한 장 요약 — 2026년 요율</span></div><div class="nav"><a href="#p3">01</a><a href="#p5">02</a><a href="#p10">03</a><a href="#p14">04</a><a href="#p17">05</a><a href="#p19">Q&amp;A</a><a class="on" href="#p21">부록</a></div></div>
 <h1 class="ptitle">제도 한 장 요약 — 2026년 요율</h1>
 <table><colgroup><col style="width:14%"/><col style="width:17%"/><col style="width:21%"/><col style="width:14%"/><col style="width:11%"/><col style="width:23%"/></colgroup><thead><tr><th>제도</th><th>취지</th><th>보험료 부담</th><th>관할</th><th>신고</th><th>2026 요율·기준</th></tr></thead><tbody><tr><td>고용 — 실업급여</td><td>실직 시 생계</td><td>근로자 0.9% + 사업주 0.9%</td><td>근로복지공단</td><td>토탈서비스</td><td><strong>1.8%</strong></td></tr><tr><td>고용 — 고용안정</td><td>고용 유지·직업훈련</td><td>사업주 전액</td><td>근로복지공단</td><td>토탈서비스</td><td>0.25% ~ 0.85%</td></tr><tr><td>산재</td><td>업무상 재해 보상</td><td>사업주 전액 (임금 공제 금지)</td><td>근로복지공단</td><td>토탈서비스</td><td><strong>35/1,000</strong> 실납 36.56</td></tr><tr><td>건강</td><td>질병·의료비</td><td>각 3.595%</td><td>건강보험공단</td><td>건강EDI</td><td><strong>7.19%</strong></td></tr><tr><td>장기요양</td><td>노인 장기요양</td><td>각 1/2</td><td>건강보험공단</td><td>건강EDI</td><td><strong>0.9448%</strong></td></tr><tr><td>국민연금</td><td>노후·장애·유족</td><td>각 4.75%</td><td>국민연금공단</td><td>연금EDI</td><td><strong>9.5%</strong> 상한 659만 / 하한 41만</td></tr><tr><td>퇴직공제</td><td>일용 퇴직금 적립</td><td>사업주 (근로일수 × 일액)</td><td>건설근로자공제회</td><td>건설E음</td><td>일액 <strong>8,700</strong> · 원가 2.3%</td></tr><tr><td>KISCON</td><td>실적·하도급 투명화</td><td>—</td><td>국토교통부</td><td>KISCON</td><td>계약일 +30일</td></tr></tbody></table>
@@ -1332,7 +1337,7 @@ td .x-sysb{margin-left:1.4mm}
 <div class="pfoot"><a class="logolink" href="#" rel="noopener" target="_blank"><span class="logo"><svg class="logo-sym" viewbox="0 0 38 29"><use href="#kbz-sym"></use></svg><svg aria-label="김반장" class="logo-type" role="img" viewbox="0 0 72 22"><use href="#kbz-type"></use></svg></span></a><span class="slogan">건설 4대보험·퇴직공제 해결사</span><div class="pgno"><b>22</b> / 26</div></div>
 </div>
 
-<div class="sheet pg-2027" id="p23">
+<div class="sheet tint-gray pg-2027" id="p23">
 <div class="topbar"><div class="crumb"><b class="cn">부록 ②</b><span>제도 한 장 요약 — 2026년 요율</span></div><div class="nav"><a href="#p3">01</a><a href="#p5">02</a><a href="#p10">03</a><a href="#p14">04</a><a href="#p17">05</a><a href="#p19">Q&amp;A</a><a class="on" href="#p21">부록</a></div></div>
 <h1 class="ptitle">2027년 지켜볼 변경안</h1>
 <p class="psub">2026.9. 기준 확인분입니다.</p>
@@ -1340,7 +1345,7 @@ td .x-sysb{margin-left:1.4mm}
 <div class="pfoot"><a class="logolink" href="#" rel="noopener" target="_blank"><span class="logo"><svg class="logo-sym" viewbox="0 0 38 29"><use href="#kbz-sym"></use></svg><svg aria-label="김반장" class="logo-type" role="img" viewbox="0 0 72 22"><use href="#kbz-type"></use></svg></span></a><span class="slogan">건설 4대보험·퇴직공제 해결사</span><div class="pgno"><b>23</b> / 26</div></div>
 </div>
 
-<div class="sheet pg-cal" id="p24">
+<div class="sheet tint-gray pg-cal" id="p24">
 <div class="topbar"><div class="crumb"><b class="cn">부록 ③</b><span>매월 신고 캘린더</span></div><div class="nav"><a href="#p3">01</a><a href="#p5">02</a><a href="#p10">03</a><a href="#p14">04</a><a href="#p17">05</a><a href="#p19">Q&amp;A</a><a class="on" href="#p21">부록</a></div></div>
 <h1 class="ptitle">매월 신고 캘린더</h1>
 <table><colgroup><col style="width:13%"/><col style="width:43%"/><col style="width:44%"/></colgroup><thead><tr><th>시기</th><th>할 일</th><th>포인트</th></tr></thead><tbody><tr><td><strong>1~3일</strong></td><td>현장 담당자로부터 <strong>노무대장 수령 → 검토</strong></td><td>일수·임금 확인, 대상자 판단(건강 현장별 8일 / 연금 8일·60시간·220만·사업장 합산)</td></tr><tr><td><strong>4~5일</strong></td><td>일용근로자 <strong>건강·연금 경정신고</strong></td><td>대상자 취득·상실. <strong>5일 기한</strong></td></tr><tr><td><strong>6~10일</strong></td><td><strong>경정고지서 확인 → 납부</strong>(건강·연금)</td><td>6일 고지서 발급 — 산출액과 대조 → <strong>10일 납부</strong>, 임금 원천공제 반영</td></tr><tr><td><strong>~13일</strong></td><td><strong>퇴직공제 확정신고</strong></td><td>노무대장 ↔ E음 카드 태그 일수 대사 → 수정 → 확정</td></tr><tr><td><strong>14~15일</strong></td><td><strong>퇴직공제 납부</strong> · <strong>근로내용확인신고</strong>(고용·산재, 모든 일용) · 상용 <strong>취득·상실</strong>(연금·고용·산재, 전월 발생분)</td><td>확정신고 후 고지 확인 → <strong>15일 납부</strong> / 근로내용확인은 대상자 구분 없이 전원</td></tr><tr><td><strong>임금 지급 시</strong></td><td>임금대장 작성 · 임금명세서 교부</td><td>지급일은 건설사마다 다름 — 일용도 매 지급 시</td></tr><tr><td><strong>말일</strong></td><td>일용 <strong>지급명세서</strong>(홈택스, 전월분)</td><td>미제출 가산세 <strong>1%</strong></td></tr></tbody></table>
@@ -1348,7 +1353,7 @@ td .x-sysb{margin-left:1.4mm}
 <div class="pfoot"><a class="logolink" href="#" rel="noopener" target="_blank"><span class="logo"><svg class="logo-sym" viewbox="0 0 38 29"><use href="#kbz-sym"></use></svg><svg aria-label="김반장" class="logo-type" role="img" viewbox="0 0 72 22"><use href="#kbz-type"></use></svg></span></a><span class="slogan">건설 4대보험·퇴직공제 해결사</span><div class="pgno"><b>24</b> / 26</div></div>
 </div>
 
-<div class="sheet pg-year" id="p25">
+<div class="sheet tint-gray pg-year" id="p25">
 <div class="topbar"><div class="crumb"><b class="cn">부록 ③</b><span>매월 신고 캘린더</span></div><div class="nav"><a href="#p3">01</a><a href="#p5">02</a><a href="#p10">03</a><a href="#p14">04</a><a href="#p17">05</a><a href="#p19">Q&amp;A</a><a class="on" href="#p21">부록</a></div></div>
 <h1 class="ptitle">월간 캘린더에 담기지 않는 연간 업무</h1>
 <p class="psub">매년 한 번 돌아오는 신고입니다.</p>

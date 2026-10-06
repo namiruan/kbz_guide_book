@@ -127,7 +127,7 @@ color:var(--blue-d);font-size:12.5pt;text-align:center;margin:0 0 4mm;flex:1;min
 .band .pfoot .logo-type{color:#fff}
 .band .pfoot .slogan{color:rgba(255,255,255,.7)}
 .pgno{flex:none;margin-top:auto;padding-top:2.4mm;text-align:right;font-size:11.5pt;
-color:rgba(17,71,151,.85);font-weight:300;letter-spacing:.02em}
+color:rgba(17,71,151,.92);font-weight:400;letter-spacing:.02em}
 .pgno b{font-weight:600;color:rgba(17,71,151,1)}
 
 .cover{height:210mm;display:flex;flex-direction:column;padding:18mm 17mm 13mm;position:relative;overflow:hidden}
@@ -500,6 +500,11 @@ padding:1mm 2.6mm;border-radius:99mm;margin-top:-.2mm}
 .sheet.tint-gray .ck:nth-child(odd){background:#fff}
 .sheet.tint-gray .ck:nth-child(even){background:#E8ECF1}
 .sheet.tint-gray blockquote{background:#fff}
+/* 바탕이 깔린 면에서는 표 칸을 흰색으로 띄웁니다 (토큰 「면 바탕」) */
+.sheet.tint-gray tbody td{background:#fff}
+.sheet.tint-gray tbody td:first-child{background:#EAF2FD}
+.sheet.tint-gray td.sub{background:#EDF1F6}
+.sheet.tint-gray td.sub:first-child{background:#DFE6F0}
 
 /* 제목 → 서브카피 간격 통일 */
 .ptitle:has(+ .psub),.ptitle:has(+ .lead),
