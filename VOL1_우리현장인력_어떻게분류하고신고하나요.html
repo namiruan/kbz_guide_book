@@ -70,7 +70,7 @@ blockquote.alert{background:var(--blue-pale);border-left-color:var(--blue-d)}
 blockquote.alert p{color:var(--blue-d)}
 
 table{width:100%;border-collapse:collapse;margin:0 0 6mm;table-layout:fixed}
-th,td{font-size:13pt;line-height:1.45;padding:3.4mm 4mm;vertical-align:middle;
+th,td{font-size:13pt;line-height:1.45;padding:var(--cell-pad,3.4mm) 4mm;vertical-align:middle;
 border-right:.3mm dashed rgba(17,90,198,.25)}
 th:last-child,td:last-child{border-right:none}
 thead th{font-family:var(--font-head);font-weight:700;color:#fff;background:var(--blue);
@@ -357,7 +357,7 @@ font-family:var(--font-head);font-size:12pt;font-weight:700;color:var(--ink-2);
 padding:var(--cell-pad,2.4mm) 2mm}
 
 /* 밀도 조정 — 내용이 많은 면에만 적용 */
-.sheet.dense th,.sheet.dense td{padding:2.4mm 3.4mm;font-size:12.5pt;line-height:1.4}
+.sheet.dense th,.sheet.dense td{padding:var(--cell-pad,2.4mm) 3.4mm;font-size:12.5pt;line-height:1.4}
 .sheet.dense .ptitle{margin-bottom:6mm}
 .sheet.dense blockquote{padding:3.4mm 4.4mm;margin-bottom:0}
 .sheet.dense blockquote p{font-size:12.5pt;line-height:1.5}
@@ -450,7 +450,7 @@ letter-spacing:-.04em;line-height:1;color:#fff}
 .flow .hit .t4{font-size:11.5pt;line-height:1.35;color:rgba(255,255,255,.85)}
 
 /* ===== items : 제목 좌 · 불릿 우 ===== */
-.items{display:flex;flex-direction:column;gap:0;margin:0;overflow:hidden}
+.items{display:flex;flex-direction:column;gap:var(--item-gap,0);margin:0;overflow:hidden}
 .itm{display:grid;grid-template-columns:54mm 1fr;gap:6mm;align-items:start;
 background:#EFF4FB;padding:3.6mm 4.4mm}
 .itm:nth-child(even){background:#E3ECF8}
@@ -1174,7 +1174,6 @@ td .x-sysb{margin-left:1.4mm}
 .vol1 #p3 > .banner{margin-bottom:0}
 .vol1 #p4 .ptitle{margin-bottom:var(--t-gap,4mm)}
 .vol1 #p4 .lead{margin-bottom:5mm}
-.vol1 #p4 th,.vol1 #p4 td{padding:2mm 3.4mm}
 
 </style></head>
 <body class="vol1">
@@ -1265,7 +1264,7 @@ td .x-sysb{margin-left:1.4mm}
 <div class="banner"><span class="mk">!</span><div><p>계약서상 '일용'이라도 <span class="u2">실질이 계속근무면 상용</span>(퇴직금 발생). 간헐·호출식은 일용.</p><p><strong>3.3%는 세금 신고 방식일 뿐</strong> — 근로자·노무제공자·독립사업자를 가르는 신분 표시가 아닙니다.</p></div></div>
 <div class="pfoot"><a class="logolink" href="#" rel="noopener" target="_blank"><span class="logo"><svg class="logo-sym" viewbox="0 0 38 29"><use href="#kbz-sym"></use></svg><svg aria-label="김반장" class="logo-type" role="img" viewbox="0 0 72 22"><use href="#kbz-type"></use></svg></span></a><span class="slogan">건설 4대보험·퇴직공제 해결사</span><div class="pgno"><b>03</b> / 21</div></div>
 </div>
-<div class="sheet dense" id="p4" style="--t-gap:4mm;--f-gap:5mm">
+<div class="sheet dense" id="p4" style="--t-gap:4mm;--f-gap:5mm;--cell-pad:2mm">
 <div class="topbar"><div class="crumb"><b class="cn">01</b><span>일용·상용근로자와 프리랜서의 차이 및 "3.3% 처리"의 위험</span></div><div class="nav"><a class="on" href="#p3">01</a><a href="#p6">02</a><a href="#p9">03</a><a href="#p13">04</a><a href="#p15">Q&amp;A</a><a href="#p16">부록</a></div></div>
 <h1 class="ptitle">"3.3%로 처리하면 편하다"가 위험한 이유</h1>
 <div class="lead"><p>근로감독관·공단·법원은 계약서 이름이 아니라 <span class="em2">실제 작업관계</span>를 봅니다.</p></div><table><colgroup><col style="width:18%"/><col style="width:41%"/><col style="width:41%"/></colgroup><thead><tr><th>판단 요소</th><th>이런 모습이면 근로자</th><th>이런 모습이면 독립사업자</th></tr></thead><tbody><tr><td><strong>업무 배정·지휘</strong></td><td>조회 후 반장·소장이 오늘 어느 동·층에서 무엇을 할지 정하고 방법·순서·재작업까지 지시</td><td>공정 범위·완성 기준만 약정, 방법은 작업자가 결정(안전·공정 접점 협의만)</td></tr><tr><td><strong>시간·장소 구속</strong></td><td>07:00 출근·조회 참석·휴무 승인, 지각·결근에 감점·교체</td><td>납기 안에서 시간·순서를 스스로 선택</td></tr><tr><td><strong>인력 대체</strong></td><td>본인이 빠지면 회사 승인 없이 다른 사람을 못 넣음</td><td>자기 팀을 직접 채용·교체·임금 지급</td></tr><tr><td><strong>자재·장비·손익</strong></td><td>철근·거푸집·타일·장비를 회사가 대고, 재시공·인건비 초과도 회사 부담</td><td>핵심 장비·자재를 자기 비용으로, 미완성·하자 시 손실 부담</td></tr><tr><td><strong>보수</strong></td><td>출근일·시간에 따른 일당·월 고정액</td><td>완성 수량·기성 단가, 하자보수 후 잔금</td></tr><tr><td><strong>전속성</strong></td><td>한 회사 현장만 장기간, 다른 일 사실상 불가</td><td>동시에 여러 현장·거래처</td></tr></tbody></table><blockquote><p>기본급 유무·3.3% 원천징수·4대보험 미가입은 <strong>회사가 임의로 정할 수 있는 것</strong>이라 판단의 보조지표에 불과합니다<span class="cite">대법원 2004다29736</span>.<br/>자기 장비 소유도 결론이 아닙니다 — 자기 굴삭기로 일했지만 현장관리자 지시를 받아 근로자로 인정된 사례<span class="cite">서울행정법원 2015구합65476</span>.</p></blockquote>

@@ -63,7 +63,7 @@ blockquote.alert{background:var(--blue-pale);border-left-color:var(--blue-d)}
 blockquote.alert p{color:var(--blue-d)}
 
 table{width:100%;border-collapse:collapse;margin:0 0 6mm;table-layout:fixed}
-th,td{font-size:13pt;line-height:1.45;padding:3.4mm 4mm;vertical-align:middle;
+th,td{font-size:13pt;line-height:1.45;padding:var(--cell-pad,3.4mm) 4mm;vertical-align:middle;
 border-right:.3mm dashed rgba(17,90,198,.25)}
 th:last-child,td:last-child{border-right:none}
 thead th{font-family:var(--font-head);font-weight:700;color:#fff;background:var(--blue);
@@ -350,7 +350,7 @@ font-family:var(--font-head);font-size:12pt;font-weight:700;color:var(--ink-2);
 padding:var(--cell-pad,2.4mm) 2mm}
 
 /* 밀도 조정 — 내용이 많은 면에만 적용 */
-.sheet.dense th,.sheet.dense td{padding:2.4mm 3.4mm;font-size:12.5pt;line-height:1.4}
+.sheet.dense th,.sheet.dense td{padding:var(--cell-pad,2.4mm) 3.4mm;font-size:12.5pt;line-height:1.4}
 .sheet.dense .ptitle{margin-bottom:6mm}
 .sheet.dense blockquote{padding:3.4mm 4.4mm;margin-bottom:0}
 .sheet.dense blockquote p{font-size:12.5pt;line-height:1.5}
@@ -443,7 +443,7 @@ letter-spacing:-.04em;line-height:1;color:#fff}
 .flow .hit .t4{font-size:11.5pt;line-height:1.35;color:rgba(255,255,255,.85)}
 
 /* ===== items : 제목 좌 · 불릿 우 ===== */
-.items{display:flex;flex-direction:column;gap:0;margin:0;overflow:hidden}
+.items{display:flex;flex-direction:column;gap:var(--item-gap,0);margin:0;overflow:hidden}
 .itm{display:grid;grid-template-columns:54mm 1fr;gap:6mm;align-items:start;
 background:#EFF4FB;padding:3.6mm 4.4mm}
 .itm:nth-child(even){background:#E3ECF8}
@@ -1167,4 +1167,3 @@ td .x-sysb{margin-left:1.4mm}
 .vol1 #p3 > .banner{margin-bottom:0}
 .vol1 #p4 .ptitle{margin-bottom:var(--t-gap,4mm)}
 .vol1 #p4 .lead{margin-bottom:5mm}
-.vol1 #p4 th,.vol1 #p4 td{padding:2mm 3.4mm}
