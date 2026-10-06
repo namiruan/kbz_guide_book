@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>VOL.1 우리 현장 인력, 어떻게 분류하고 신고하나요</title>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.3/packages/wanted-sans/fonts/webfonts/variable/complete/WantedSansVariable.min.css">
+<style>
+:root{--blue:#115AC6;--blue-d:#114797;--blue-pale:#F0F7FF;--blue-line:rgba(17,90,198,.12);--cyan-pastel:#B7E1F5;
+--ink:#131416;--ink-2:#4A4D55;--ink-3:rgba(19,20,22,.42);--line:rgba(17,90,198,.10);--paper:#FFFFFF;
+--font:"Pretendard Variable",Pretendard,"Noto Sans CJK KR",-apple-system,"Apple SD Gothic Neo",sans-serif;
+--font-head:"Wanted Sans Variable","Wanted Sans","Pretendard Variable",Pretendard,"Noto Sans CJK KR",sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(6mm + env(safe-area-inset-top,0px))}
+body{margin:0;background:#9AA0A6;font-family:var(--font);color:var(--ink);
+-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums;word-break:keep-all;line-break:strict;overflow-wrap:break-word}
+.sheet{width:297mm;height:210mm;background:#FFFFFF;margin:9mm auto;position:relative;
+padding:var(--pt,13mm) 14mm var(--pb,9mm);box-shadow:0 2mm 8mm rgba(0,0,0,.25);overflow:hidden;
+display:flex;flex-direction:column}
+.sheet--cover{padding:0}
+
+.topbar{flex:none;display:flex;justify-content:space-between;align-items:center;margin-bottom:var(--tb-gap,4mm)}
+span.logo{display:inline-flex;align-items:center;gap:1.6mm;flex:none}
+a.logolink{display:inline-flex;text-decoration:none;flex:none}
+svg.logo-sym{height:5.4mm;width:auto;display:block}
+svg.logo-type{height:4.2mm;width:auto;display:block;color:#0E3B63}
+.crumb{display:flex;align-items:baseline;gap:2.6mm;font-size:12.5pt;font-weight:700}
+.crumb .cn{font-family:var(--font-head);color:var(--blue);font-weight:700}
+.crumb span{color:var(--blue-d);font-weight:500}
+.band .crumb .cn{color:#fff;opacity:.72}
+.band .crumb span{color:#fff}
+.crumb .sep{color:var(--blue);opacity:.5;font-weight:500}
+.crumb .cur{color:var(--blue)}
+.nav{display:flex;gap:1.2mm;align-items:center}
+.nav a{display:block;padding:2.2mm 3mm;border-radius:1.8mm;font-family:var(--font-head);
+font-size:11.5pt;font-weight:600;color:rgba(17,90,198,.55);text-decoration:none;
+letter-spacing:.01em;transition:background .15s,color .15s}
+.nav a:hover{background:rgba(17,90,198,.08);color:var(--blue)}
+.nav a.on{background:#fff;border:.3mm solid rgba(17,90,198,.6);color:var(--blue);font-weight:700;
+padding:1.9mm 2.7mm}
+.band .nav a{color:rgba(255,255,255,.55)}
+.band .nav a.on{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.7);color:#fff}
+
+.ptitle{font-family:var(--font-head);font-size:26pt;line-height:1.2;font-weight:700;letter-spacing:-.04em;margin:0 0 var(--t-gap,8mm);color:var(--blue-d)}
+.ptitle .hl{background:var(--blue-pale);padding:0 1.5mm}
+
+
+.card{border:.35mm solid var(--line);border-radius:2.5mm;padding:4.6mm 5.4mm;margin:0 0 6mm;background:#F8FDFF}
+.card:last-of-type{margin-bottom:0}
+.card h3{font-family:var(--font-head);font-size:16pt;font-weight:600;color:var(--blue-d);margin:0 0 2.2mm;letter-spacing:-.02em}
+p,li{font-size:14pt;line-height:1.5;margin:0 0 2.2mm;color:var(--ink-2)}
+p strong,li strong{color:var(--ink);font-weight:700}
+.u{font-weight:700;color:var(--ink);border-bottom:.6mm solid var(--blue);padding-bottom:.4mm}
+ul,ol{margin:0 0 2.6mm;padding-left:6mm}
+li{margin-bottom:1.6mm}
+ul.cols2{column-count:2;column-gap:9mm}
+ul.cols2 li{break-inside:avoid}
+
+blockquote{margin:0 0 6mm;padding:4.4mm 5.4mm;border:none;
+border-left:1.4mm solid var(--blue);border-radius:0;background:#F3F6FA;position:relative}
+blockquote p{font-size:13pt;line-height:1.55;color:var(--ink-2);margin:0}
+blockquote p+p{margin-top:2.4mm}
+blockquote strong{color:var(--ink);font-weight:700}
+.cite{display:inline-block;background:#E4ECF7;color:var(--blue-d);font-family:var(--font-head);
+font-size:11pt;font-weight:600;line-height:1.3;padding:.7mm 2mm;border-radius:2mm;
+margin:0 .6mm;vertical-align:.3mm;letter-spacing:-.01em;white-space:nowrap}
+blockquote.alert{background:var(--blue-pale);border-left-color:var(--blue-d)}
+blockquote.alert p{color:var(--blue-d)}
+
+table{width:100%;border-collapse:collapse;margin:0 0 6mm;table-layout:fixed}
+th,td{font-size:13pt;line-height:1.45;padding:3.4mm 4mm;vertical-align:middle;
+border-right:.3mm dashed rgba(17,90,198,.25)}
+th:last-child,td:last-child{border-right:none}
+thead th{font-family:var(--font-head);font-weight:700;color:#fff;background:var(--blue);
+text-align:left;padding:3mm 4mm;border-right:.3mm dashed rgba(255,255,255,.45)}
+thead th:last-child{border-right:none}
+tbody td{border-bottom:.3mm solid rgba(17,90,198,.16)}
+tbody tr:last-child td{border-bottom:.3mm solid rgba(17,90,198,.16)}
+tbody td:first-child{background:#EAF2FD;font-family:var(--font-head);font-weight:700;
+color:var(--blue-d)}
+tbody td:first-child strong{color:var(--blue-d)}
+td strong{color:var(--ink);font-weight:700}
+td.num,th.num{text-align:right}
+td.c{text-align:center}
+.amt{font-weight:700;color:var(--blue)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:0 6mm}
+
+.qa{border:.35mm solid var(--line);border-radius:2.5mm;padding:5mm 6mm;margin:0 0 6mm;background:#F8FDFF}
+.qa::before{content:none}
+.qa h3{font-family:var(--font-head);font-size:15pt;line-height:1.4;font-weight:700;color:var(--ink);margin:0 0 3mm}
+.qa h3 .qn{color:var(--blue);font-size:17pt;font-weight:900;margin-right:2mm}
+.qa .sit{background:#F4F5F7;border-radius:2mm;padding:2.6mm 4mm;font-size:13pt;
+color:var(--ink-2);margin:0 0 3mm}
+.qa .sit b{color:var(--ink);font-weight:700;margin-right:3mm}
+.qa .ans{background:var(--blue);color:#fff;border-radius:99mm;padding:2.8mm 5mm;
+font-size:13.5pt;font-weight:500;margin:0 0 3mm;display:inline-block}
+.qa .ans b{font-weight:700}
+.qa p{font-size:13.5pt;line-height:1.55;margin:0}
+
+.claims{display:grid;grid-template-columns:repeat(2,1fr);gap:4mm}
+.claims.c3{grid-template-columns:repeat(3,1fr)}
+.cl{border:.35mm solid var(--line);border-radius:2.5mm;background:#fff;padding:3.2mm 3.8mm;
+display:flex;flex-direction:column}
+.cl .hd{display:flex;align-items:baseline;justify-content:space-between;gap:3mm;margin-bottom:2.4mm}
+.cl .nm{font-family:var(--font-head);font-size:14pt;font-weight:700;color:var(--ink);line-height:1.2}
+.cl .amt2{font-family:var(--font-head);font-size:18pt;font-weight:900;letter-spacing:-.03em;color:var(--blue);white-space:nowrap}
+.cl .amt2.est{font-size:12pt;font-weight:700;color:var(--ink-3)}
+.cl .track{height:1.8mm;background:#EEF0F3;border-radius:1mm;margin:0 0 3mm;overflow:hidden}
+.cl .track i{display:block;height:100%;background:var(--blue)}
+.cl .track.est{background:repeating-linear-gradient(90deg,#DDE1E7 0 1.4mm,transparent 1.4mm 2.8mm)}
+.cl .bd{font-size:13.5pt;line-height:1.45;margin:0 0 auto;color:var(--ink-2)}
+.cl .src{font-size:11.5pt;line-height:1.35;color:var(--ink-3);margin:3mm 0 0;padding-top:2.2mm;border-top:.3mm solid var(--line)}
+.cl.solid{background:var(--blue);border-color:var(--blue)}
+.cl.solid .nm,.cl.solid .bd,.cl.solid .amt2{color:#fff}
+
+.figbox{border:.4mm dashed var(--blue-line);border-radius:2mm;background:var(--blue-pale);
+display:flex;align-items:center;justify-content:center;flex-direction:column;gap:2mm;
+color:var(--blue-d);font-size:12.5pt;text-align:center;margin:0 0 4mm;flex:1;min-height:0}
+.figbox .tag{font-weight:700;color:var(--blue);font-size:12pt}
+.caption{font-size:12.5pt;line-height:1.45;color:var(--ink-3)}
+.legal{font-size:12.5pt;line-height:1.5;color:var(--ink-3)}
+/* 면 하단 브랜드 라인 */
+.pfoot{flex:none;margin-top:auto;padding-top:var(--f-gap,9mm);display:flex;align-items:center;gap:3mm}
+.pfoot a.logolink,.pfoot span.logo{display:inline-flex;align-items:center;gap:1.8mm;flex:none}
+.pfoot .logo-sym{height:5.2mm}
+.pfoot .logo-type{height:4mm;color:#0E3B63}
+.pfoot .slogan{font-size:11pt;color:var(--ink-3);flex:1}
+.pfoot .pgno{margin:0;padding:0;flex:none}
+.band .topbar{margin-bottom:6mm;position:relative}
+.band .crumb{color:#fff}
+.band .nav{color:rgba(255,255,255,.55)}
+.band .pfoot .logo-type{color:#fff}
+.band .pfoot .slogan{color:rgba(255,255,255,.7)}
+.pgno{flex:none;margin-top:auto;padding-top:2.4mm;text-align:right;font-size:11.5pt;
+color:rgba(17,71,151,.85);font-weight:300;letter-spacing:.02em}
+.pgno b{font-weight:600;color:rgba(17,71,151,1)}
+
+.cover{height:210mm;display:flex;flex-direction:column;padding:18mm 17mm 13mm;position:relative;overflow:hidden}
+/* ===== 이미지 자리표시자 ===== */
+.imgslot{border:.4mm dashed rgba(17,90,198,.35);border-radius:2.5mm;background:rgba(17,90,198,.04);
+display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2mm;text-align:center;
+font-size:11pt;line-height:1.45;color:rgba(17,71,151,.6)}
+.imgslot span{font-size:11pt;font-weight:700;color:var(--blue);letter-spacing:.02em}
+.cover-illu{position:absolute;right:16mm;bottom:30mm;width:150mm;height:120mm}
+
+.cover .kicker{font-size:12.5pt;font-weight:700;color:var(--blue);margin:0 0 10mm}
+.cover-title{font-family:var(--font-head);font-size:46pt;line-height:1.22;font-weight:900;letter-spacing:-.05em;margin:0;color:var(--blue-d)}
+.cover-foot{margin-top:auto;padding-bottom:0;display:flex;justify-content:space-between;align-items:flex-end}
+.brand{font-family:var(--font-head);font-size:17pt;font-weight:900;color:var(--ink)}
+.brand img.logo{height:9mm;margin-bottom:2.4mm}
+.brand span{display:block;font-size:12pt;font-weight:500;color:var(--ink-3);margin-top:0}
+
+.tocitem{display:flex;align-items:baseline;gap:6mm;padding:3.4mm 0;border-bottom:.3mm solid var(--line)}
+.tocitem .n{width:9mm;font-size:18pt;font-weight:900;color:var(--blue);flex:none;line-height:1}
+.tocitem .t{flex:1;font-size:14.5pt;line-height:1.25;font-weight:700;color:var(--ink)}
+.tocitem .p{font-size:13pt;font-weight:700;color:var(--ink-3);flex:none;width:10mm;text-align:right}
+.tocapp{display:flex;margin-top:auto;background:var(--blue-pale);border-radius:2mm;flex:none}
+.tocapp .it{flex:1;display:flex;align-items:baseline;gap:3mm;padding:4mm 5mm}
+.tocapp .k{font-size:12pt;font-weight:700;color:var(--blue);flex:none}
+.tocapp .t{flex:1;font-size:12pt;line-height:1.3;color:var(--ink-2)}
+.tocapp .p{font-size:12pt;font-weight:700;color:var(--ink-2)}
+.tocseries{display:grid;grid-template-columns:repeat(3,1fr);gap:4mm}
+.tocseries .card{border-radius:2mm;padding:4.6mm 5mm;margin:0}
+.tocseries .card.cur{background:var(--blue);border-color:var(--blue)}
+.tocseries .v{font-size:12pt;font-weight:900;color:var(--blue);margin:0 0 2mm}
+.tocseries .card.cur .v{color:#fff;opacity:.85}
+.tocseries .d{font-size:12.5pt;line-height:1.45;margin:0;color:var(--ink-2);font-weight:500}
+.tocseries .card.cur .d{color:#fff}
+
+.cta-box{border:none;border-radius:2mm;background:var(--blue-pale);padding:6mm 7mm}
+.cta-box h3{font-family:var(--font-head);margin:0 0 3mm;font-size:18pt;font-weight:900;color:var(--blue-d)}
+.cta-box li{font-size:14pt;margin-bottom:2mm;color:var(--ink-2)}
+.cta-cyan{background:var(--blue);color:#fff;border-radius:2mm;padding:4.6mm 6mm;margin-top:4mm;
+display:flex;justify-content:space-between;align-items:center;gap:4mm}
+.cta-cyan p{margin:0;font-size:15pt;font-weight:700;line-height:1.35;color:#fff}
+.cta-cyan .qr{width:22mm;height:22mm;background:rgba(255,255,255,.2);border-radius:2mm;
+border:.4mm dashed rgba(255,255,255,.65);display:flex;align-items:center;justify-content:center;
+font-size:12pt;flex:none;text-align:center}
+@media print{*{-webkit-print-color-adjust:exact;print-color-adjust:exact}.sheet{zoom:1!important}html,body{width:297mm;background:#fff}.nav a:hover{background:none}a.tl:hover{background:none}.printbar{display:none}
+.sheet{margin:0;box-shadow:none;break-after:page;page-break-after:always;
+break-inside:avoid;page-break-inside:avoid}
+.sheet:last-child{break-after:avoid;page-break-after:avoid}@page{size:A4 landscape;margin:0}}
+@media (max-width:1200px){.sheet{zoom:.82}}
+@media (max-width:1000px){.sheet{zoom:.68}}
+@media (max-width:820px){.sheet{zoom:.54}}
+@media (max-width:660px){.sheet{zoom:.42}}
+.printbar{position:fixed;right:5mm;bottom:5mm;z-index:9;background:var(--ink);color:#fff;
+border:none;border-radius:2mm;padding:3mm 5mm;font-family:var(--font);font-size:12pt;
+font-weight:700;cursor:pointer}
+
+.card .lead2{font-size:12.5pt;color:var(--ink-3);margin:0 0 1.6mm}
+.card .main b{color:var(--ink);font-weight:700}
+.card .main{font-size:13pt;line-height:1.55;color:var(--ink-2);margin:0}
+.sheet--band{padding:0}
+.band{background:var(--blue);color:#fff;padding:15mm 16mm 11mm;height:100%;
+display:flex;flex-direction:column;position:relative;overflow:hidden}
+.band .ghost{position:absolute;left:-4mm;bottom:-24mm;font-size:120pt;font-weight:900;
+color:rgba(255,255,255,.08);letter-spacing:-.04em;line-height:1}
+.band .hd{display:flex;align-items:baseline;gap:8mm;margin-bottom:9mm;position:relative}
+.band h1{font-family:var(--font-head);font-size:26pt;font-weight:900;letter-spacing:-.03em;margin:0;color:#fff}
+.band .hd p{font-size:12.5pt;color:rgba(255,255,255,.8);margin:0}
+.chk{display:grid;grid-template-columns:repeat(3,1fr);gap:8mm;position:relative}
+.chk .it .ic{width:7mm;height:7mm;border-radius:50%;background:#fff;color:var(--blue);
+display:flex;align-items:center;justify-content:center;font-size:12pt;font-weight:900;margin:0 0 3mm}
+.chk .it h4{font-family:var(--font-head);font-size:15pt;font-weight:700;margin:0 0 2mm;color:#fff}
+.chk .it p{font-size:13pt;line-height:1.45;margin:0;color:rgba(255,255,255,.82)}
+.band .pgno{color:rgba(255,255,255,.7)}
+
+/* ===== 수치 강조 면 (흰 바탕) ===== */
+.impact{display:contents}
+.imp-head{display:grid;grid-template-columns:auto 1fr;gap:10mm;align-items:end;
+background:var(--blue-pale);border-radius:2.5mm;padding:4.6mm 6mm;margin-bottom:5mm}
+.imp-big{line-height:1}
+.imp-big .lbl{font-size:12pt;color:var(--blue-d);opacity:.75;margin:0 0 2mm;font-weight:500}
+.imp-big .num{font-family:var(--font-head);font-size:44pt;font-weight:900;letter-spacing:-.05em;color:var(--ink);line-height:.9}
+.imp-big .num small{font-size:16pt;font-weight:700;margin-left:1mm}
+.imp-head .why{font-size:13.5pt;line-height:1.45;color:var(--ink-2);margin:0 0 1.6mm}
+.imp-head .why b{font-weight:900;color:var(--ink)}
+.imp-head .src2{font-size:11.5pt;color:var(--ink-3);margin:0}
+.imp-title{font-family:var(--font-head);font-size:26pt;font-weight:700;letter-spacing:-.04em;color:var(--blue-d);margin:0 0 7mm}
+
+.imp-grid{display:grid;grid-template-columns:1fr;gap:var(--grid-gap,3.5mm)}
+.ic2{display:grid;grid-template-columns:34mm 1fr;gap:4mm;align-items:start;
+border:.35mm solid var(--line);border-radius:2.5mm;padding:3mm 3.6mm}
+.ic2 .t{font-size:13pt;font-weight:700;color:var(--ink);margin:0 0 1.4mm;line-height:1.25}
+.ic2 .v{font-family:var(--font-head);font-size:20pt;font-weight:900;letter-spacing:-.04em;color:var(--ink);margin:0;line-height:1}
+.ic2 .d{font-size:13pt;line-height:1.45;color:var(--ink-2);margin:0}
+.ic2 .s{font-size:12pt;color:var(--ink-3);margin:1.6mm 0 0}
+
+/* ===== 목차 ===== */
+.tocwrap2{display:block;flex:1;min-height:0;padding-right:98mm}
+.toc-right{display:flex;flex-direction:column;min-width:0}
+/* 목차 광고 — 상·우·하 재단까지 꽉 채움 */
+.sheet--toc{position:relative}
+.toc-ad{position:absolute;top:0;right:0;bottom:0;width:94mm}
+.toc-ad .imgslot{width:100%;height:100%;border-radius:0;border-right:none;border-top:none;border-bottom:none}
+.toclist{flex:none}
+a.tl{text-decoration:none;color:inherit}
+a.tl:hover{background:var(--blue-pale)}
+a.tl:hover .t{color:var(--blue)}
+.tl{display:grid;grid-template-columns:22mm 1fr 14mm;align-items:baseline;
+padding:3.8mm 0;border-bottom:.3mm solid var(--line)}
+.tl .n{font-family:var(--font-head);font-size:13.5pt;font-weight:700;color:var(--blue);letter-spacing:-.02em}
+.tl .t{font-family:var(--font-head);transition:color .15s;font-size:14pt;font-weight:500;line-height:1.3;color:var(--ink);padding-right:4mm}
+.tl .p{font-size:12pt;font-weight:700;color:var(--ink-3);text-align:right}
+
+/* ===== 표지 색상 변형 (문서마다 하나 지정) ===== */
+.cover{color:#fff}
+.cover--c1{background:linear-gradient(145deg,#1E2A6B 0%,#3A3F9E 48%,#5B3FA8 100%)}
+.cover--c2{background:linear-gradient(145deg,#0B6E7A 0%,#0E9A91 52%,#2FB87A 100%)}
+.cover--c3{background:linear-gradient(145deg,#3A2FB8 0%,#5B46E0 50%,#8168F2 100%)}
+.cover--c4{background:linear-gradient(145deg,#0B3F9E 0%,#1565D6 50%,#2FBEE0 100%)}
+.cover--c5{background:linear-gradient(145deg,#0D2F7A 0%,#114797 46%,#2B6FD6 100%)}
+.cover--c6{background:linear-gradient(145deg,#1F3350 0%,#2F5684 52%,#4A8AC4 100%)}
+.cover--c7{background:linear-gradient(145deg,#5A2170 0%,#8A3AA8 50%,#B85BC9 100%)}
+.cover--c8{background:linear-gradient(145deg,#073E57 0%,#0C6E92 48%,#1AA0B5 100%)}
+.cover .kicker{color:rgba(255,255,255,.78)}
+.cover-title{color:#fff}
+.cover .legal{color:rgba(255,255,255,.62)}
+.cover .brand span{color:rgba(255,255,255,.72)}
+/* 표지: 심볼은 원본 배색, 로고타입만 흰색 반전 */
+.brand a.logolink,.brand span.logo{display:inline-flex;align-items:center;gap:2.6mm;margin:0 0 1mm}
+.crumb span.logo{display:inline-flex;align-items:center}
+.cover .brand .logo-sym{height:9mm}
+.cover .brand .logo-type{height:7mm;color:#fff}
+.cover .imgslot{border-color:rgba(255,255,255,.35);background:rgba(255,255,255,.08);
+color:rgba(255,255,255,.72)}
+.cover .imgslot span{color:#fff}
+
+/* ===== 본문 면 색 ===== */
+/* 기본은 흰색. 문서마다 아래 파스텔 하나를 고를 수 있습니다(단색, 그라데이션 금지) */
+.tint-none  {background:#FFFFFF}
+.tint-blue  {background:#EDF5FD}
+.tint-mint  {background:#EAF6F1}
+.tint-sand  {background:#FAF5EC}
+.tint-lilac {background:#F2EFFA}
+.tint-peach {background:#FDF1EC}
+.tint-gray  {background:#F4F6F8}
+
+/* ===== cards-compare : 유형 N개를 가로로 나란히 대조 ===== */
+
+/* ===== cols : 단 비교 (구분선 + 지브라 항목) ===== */
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:0 0 7mm;
+background:#F6F9FC;border-radius:2.5mm;padding:6mm 7mm}
+.cols.n2{grid-template-columns:repeat(2,1fr)}
+.cols .col{padding:0 6mm}
+.cols .col:first-child{padding-left:0}
+.cols .col:last-child{padding-right:0}
+.cols .col+.col{border-left:.35mm solid rgba(17,90,198,.3)}
+.cols .lb{font-family:var(--font-head);font-size:12.5pt;font-weight:600;
+color:var(--blue);margin:0 0 1.4mm;letter-spacing:-.01em}
+.cols .ti{font-family:var(--font-head);font-size:20pt;font-weight:700;
+color:var(--blue-d);margin:0 0 5mm;letter-spacing:-.03em;line-height:1.2}
+.cols .df{font-size:13.5pt;line-height:1.5;color:var(--ink-2);margin:0 0 4mm}
+.cols .df strong{color:var(--ink);font-weight:700}
+.cols .kv{border-top:.35mm solid rgba(17,90,198,.3);padding-top:3mm;margin-top:3mm}
+.cols .kv:first-of-type{margin-top:0}
+.cols .kv .k{display:block;font-family:var(--font-head);font-size:11.5pt;font-weight:700;
+color:var(--blue);margin:0 0 1.4mm;letter-spacing:.01em}
+.cols .kv .v{display:block;font-size:13pt;line-height:1.45;color:var(--ink-2)}
+.cols .kv .v strong{color:var(--ink);font-weight:700}
+
+/* ===== banner : 면 전체 폭을 쓰는 핵심 안내 띠 ===== */
+.banner{display:flex;align-items:flex-start;gap:4.6mm;background:var(--blue-pale);
+border-radius:2.5mm;padding:5mm 6mm;margin:0 0 7mm}
+.banner .mk{flex:none;width:7mm;height:7mm;border-radius:50%;background:var(--blue);
+color:#fff;font-family:var(--font-head);font-size:12pt;font-weight:900;line-height:7mm;
+text-align:center;margin-top:.6mm}
+.banner p{font-size:13.5pt;line-height:1.55;color:var(--blue-d);margin:0}
+.banner p+p{margin-top:1.6mm}
+.banner strong{font-weight:700;color:var(--blue-d)}
+.banner .u2{font-weight:700;border-bottom:.5mm solid var(--blue);padding-bottom:.4mm}
+
+/* 블록 사이 간격 — 면의 마지막 요소는 아래 여백 없음 */
+.sheet > *:last-child{margin-bottom:0}
+.cols:last-child,.banner:last-child,table:last-child,blockquote:last-child,
+.qa:last-child,.card:last-child{margin-bottom:0}
+
+/* ===== lead / psub / imp-sub : 제목 아래 서브카피 (동일 스타일) ===== */
+.psub,.imp-sub{font-size:14.5pt;line-height:1.75;color:var(--ink-2);
+margin:0 0 7mm;font-weight:400}
+.psub .em,.imp-sub .em,.psub strong,.imp-sub strong{color:var(--blue-d);font-weight:700}
+.psub .em2,.imp-sub .em2{color:var(--blue);font-weight:700}
+.lead{margin:0 0 7mm}
+.lead p{font-size:14.5pt;line-height:1.75;color:var(--ink-2);margin:0}
+.lead p+p{margin-top:5mm}
+.lead .em{color:var(--blue-d);font-weight:700}
+.lead .em2{color:var(--blue);font-weight:700}
+
+/* ===== vs : 두 입장을 가운데 축으로 마주 세움 ===== */
+.vs{display:grid;grid-template-columns:1fr 34mm 1fr;margin:0 0 6mm;
+grid-template-rows:min-content;grid-auto-rows:minmax(min-content,1fr)}
+.vs > *{display:flex;align-items:center}
+.vs .hd{padding:var(--hd-pad,3mm) 6.2mm;gap:2.4mm;border-radius:2.5mm 2.5mm 0 0}
+.vs .hd.ok{background:#E7F1FD}
+.vs .hd.ng{background:#FDEEE9}
+.vs .hd .ic{width:6.4mm;height:6.4mm;border-radius:50%;flex:none;color:#fff;
+font-family:var(--font-head);font-size:11pt;font-weight:900;line-height:6.4mm;text-align:center}
+.vs .hd.ok .ic{background:var(--blue)}
+.vs .hd.ng .ic{background:#C2410C}
+.vs .hd .t{font-family:var(--font-head);font-size:15pt;font-weight:700;letter-spacing:-.02em}
+.vs .hd.ok .t{color:var(--blue-d)}
+.vs .hd.ng .t{color:#9A3412}
+.vs .vschip{justify-content:center;font-family:var(--font-head);font-size:13pt;
+font-weight:900;color:var(--ink-3);letter-spacing:.04em}
+.vs .cell{display:flex;align-items:center;padding:var(--cell-pad,2.4mm) 6.2mm;font-size:13pt;line-height:1.45;color:var(--ink)}
+.vs .cell .in{display:block;width:100%}
+.vs .cell strong{color:var(--ink);font-weight:700}
+.vs .cell.ok{background:#F5FAFF;border-top:.3mm solid rgba(17,90,198,.18)}
+.vs .cell.ng{background:#FEF7F4;border-top:.3mm solid rgba(194,65,12,.18)}
+.vs > *:nth-last-child(3){border-radius:0 0 0 2.5mm}
+.vs > *:last-child{border-radius:0 0 2.5mm 0}
+.vs .lb{align-items:center;justify-content:center;text-align:center;
+font-family:var(--font-head);font-size:12pt;font-weight:700;color:var(--ink-2);
+padding:var(--cell-pad,2.4mm) 2mm}
+
+/* 밀도 조정 — 내용이 많은 면에만 적용 */
+.sheet.dense th,.sheet.dense td{padding:2.4mm 3.4mm;font-size:12.5pt;line-height:1.4}
+.sheet.dense .ptitle{margin-bottom:6mm}
+.sheet.dense blockquote{padding:3.4mm 4.4mm;margin-bottom:0}
+.sheet.dense blockquote p{font-size:12.5pt;line-height:1.5}
+
+/* 표가 면의 남은 세로 공간을 채움 — 뒤에 요소가 오면 여백 유지 */
+.sheet > table{flex:1 1 auto;margin-bottom:6mm}
+.sheet > table:has(+ .pfoot){margin-bottom:0}
+.sheet > table td,.sheet > table th{vertical-align:middle}
+
+/* vs 블록이 면의 남은 세로 공간을 채움 */
+.sheet > .vs{flex:0 0 auto}
+.sheet > .cases{flex:1 1 auto}
+.sheet > .vs:has(+ .pfoot){margin-bottom:0}
+
+/* ===== 사례 : VS 안에 중첩 (납작한 줄) ===== */
+.vs .cell.nest{padding:var(--cs-pad,1.6mm) 3mm;display:block}
+.vs .stack{display:flex;flex-direction:column}
+.cs{display:grid;grid-template-columns:1fr auto;align-items:center;gap:3mm;
+padding:var(--cs-pad,2mm) 0}
+.cs+.cs{border-top:.3mm solid rgba(0,0,0,.08)}
+.cs .nm2{font-family:var(--font-head);font-size:12.5pt;font-weight:700;
+color:var(--ink);margin:0 0 .4mm}
+.cs .fact{font-size:12pt;line-height:1.4;color:var(--ink-2);margin:0}
+.cs .res{display:flex;align-items:center;gap:1.6mm;flex:none}
+.cs .arw{font-size:12pt;color:var(--ink-3);line-height:1}
+.cs .bg{font-family:var(--font-head);font-size:12pt;font-weight:700;
+padding:1.2mm 2.4mm;border-radius:99mm;white-space:nowrap}
+.cs.ok .bg{background:#DCE9FA;color:var(--blue-d)}
+.cs.ng .bg{background:#FADDD2;color:#9A3412}
+
+
+/* 판정 예 — VS 패널에 이어 붙고, 면색 위에 카드 삽입 */
+.cases{display:grid;grid-template-columns:1fr 34mm 1fr;margin:0}
+.cases .lb2{display:flex;align-items:flex-start;justify-content:center;
+font-family:var(--font-head);font-size:12pt;font-weight:700;color:var(--ink-2);
+text-align:center;margin:0;padding:calc(var(--cs-pad,2.4mm)*2 + .3mm) 2mm 0}
+.sheet > .vs:has(+ .cases){margin-bottom:0}
+.vs:has(+ .cases) > *:nth-last-child(3),
+.vs:has(+ .cases) > *:last-child{border-radius:0}
+.cases .stack{display:flex;flex-direction:column;gap:var(--cs-gap,2.4mm);
+padding:var(--cs-pad,2.4mm) 3mm 3.4mm;border-radius:0 0 2.5mm 2.5mm;
+border-top:.3mm solid rgba(0,0,0,.06)}
+.cases .stack.ok{background:#F5FAFF}
+.cases .stack.ng{background:#FEF7F4}
+.cases .cs{background:#fff;border-radius:2.5mm;padding:var(--cs-pad,2.4mm) 3.2mm}
+.cases .cs.ok{border:.3mm solid rgba(17,90,198,.22)}
+.cases .cs.ng{border:.3mm solid rgba(194,65,12,.22)}
+.cases .cs+.cs{border-top-width:.3mm}
+.sheet > .cases{flex:1 1 auto}
+
+/* ===== 레이아웃 B : 제목 좌 1/3 · 콘텐츠 우 2/3 ===== */
+.side{display:grid;grid-template-columns:1fr 2fr;gap:var(--side-gap,16mm);flex:1;min-height:0}
+.side-l{display:flex;flex-direction:column;min-width:0}
+.side-l .ptitle,.side-l .imp-title{margin:0 0 var(--t-gap,8mm)}
+.side-l .psub,.side-l .imp-sub{margin:0 0 7mm}
+.side-l .flow{margin-top:0}
+.side-r{display:flex;flex-direction:column;justify-content:center;min-width:0}
+.side-r > *:last-child{margin-bottom:0}
+.side-r > table,.side-r > .cases{flex:1 1 auto}
+.side-r > .items{flex:0 0 auto}
+
+/* 제목 영역 하단 배너 */
+.side-l .banner{margin-top:auto;padding:4mm 4.6mm}
+.side-l .banner p{font-size:12pt;line-height:1.5}
+.side-l .banner .mk{width:6.4mm;height:6.4mm;line-height:6.4mm;font-size:11pt}
+
+/* ===== flow : 사실 카드 → 결과 카드 ===== */
+.flow{background:transparent;border:none;padding:0;margin:0;max-width:72mm}
+.flow .fact{background:#fff;border:.35mm solid var(--line);border-radius:2mm;padding:3.6mm 4mm}
+.flow .fact .k2{font-size:11.5pt;font-weight:600;color:var(--ink-3);margin:0 0 1.6mm}
+.flow .bar{height:7.2mm;border-radius:1mm;background:#DFE9F7;overflow:hidden;
+display:flex;align-items:center}
+.flow .bar i{display:flex;align-items:center;height:100%;background:var(--blue);
+border-radius:1mm;padding:0 2.6mm;font-family:var(--font-head);font-size:12pt;
+font-weight:700;color:#fff;white-space:nowrap}
+.flow .bar b{margin-left:auto;padding-right:2.6mm;font-family:var(--font-head);
+font-size:11.5pt;font-weight:700;color:var(--ink-3)}
+.flow .fact .one{display:flex;align-items:baseline;gap:2.4mm;margin:3mm 0 0;
+padding-top:3mm;border-top:.3mm solid var(--line)}
+.flow .fact .n5{font-family:var(--font-head);font-size:17pt;font-weight:900;
+letter-spacing:-.04em;line-height:1;color:var(--blue-d);white-space:nowrap}
+.flow .fact .t5{font-size:11.5pt;line-height:1.35;color:var(--ink-2)}
+.flow .gap2{display:flex;flex-direction:column;align-items:center;gap:.8mm;margin:2.6mm 0}
+.flow .gap2 .a3{color:var(--blue);font-size:14pt;line-height:1}
+.flow .gap2 .c3{font-size:11.5pt;color:var(--ink-2);text-align:center;line-height:1.35}
+.flow .hit{background:var(--blue);border-radius:2mm;padding:4mm;
+display:flex;flex-direction:column;align-items:center;gap:1.2mm;text-align:center}
+.flow .hit .n4{font-family:var(--font-head);font-size:22pt;font-weight:900;
+letter-spacing:-.04em;line-height:1;color:#fff}
+.flow .hit .t4{font-size:11.5pt;line-height:1.35;color:rgba(255,255,255,.85)}
+
+/* ===== items : 제목 좌 · 불릿 우 ===== */
+.items{display:flex;flex-direction:column;gap:0;margin:0;overflow:hidden}
+.itm{display:grid;grid-template-columns:54mm 1fr;gap:6mm;align-items:start;
+background:#EFF4FB;padding:3.6mm 4.4mm}
+.itm:nth-child(even){background:#E3ECF8}
+.itm .hd3{font-family:var(--font-head);font-size:14pt;font-weight:700;line-height:1.3;
+color:var(--blue-d);letter-spacing:-.02em;margin:0}
+.itm .amt3{display:block;font-family:var(--font-head);font-size:17pt;font-weight:900;
+color:var(--blue);letter-spacing:-.03em;margin-top:.8mm}
+.itm ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:1.6mm}
+.itm li{display:grid;grid-template-columns:3mm 1fr;gap:1.4mm;font-size:13pt;line-height:1.5;
+color:var(--ink-2);margin:0}
+.itm li::before{content:"·";color:var(--ink-3);font-weight:700}
+.itm li.src4{font-size:12pt;color:var(--ink-3)}
+.itm .hi,.itm li strong{color:var(--blue);font-weight:700}
+.itm .hd3 strong{color:inherit;font-weight:inherit}
+
+/* 바탕색이 깔린 면에서는 카드를 흰색으로 */
+.sheet.tint-blue .card,.sheet.tint-blue .cl,
+.sheet.tint-blue .qa{background:#fff}
+.sheet.tint-blue .itm{background:#fff}
+.sheet.tint-blue .itm:nth-child(even){background:#F2F7FD}
+
+/* 틴트 면 : 좌측 도해는 바탕에 녹이고 우측 행을 띄움 */
+
+.sheet.tint-blue .items{box-shadow:0 .4mm 1.4mm rgba(17,71,151,.06)}
+
+/* ===== checklist : 자가진단 문항 ===== */
+.chklist{display:grid;grid-template-columns:1fr;gap:0;margin:0}
+.ck{display:grid;grid-template-columns:6.8mm 6mm 1fr auto;gap:3.4mm;align-items:start;
+padding:3.4mm 5mm;border:none}
+.ck:nth-child(odd){background:#F4F7FB}
+.ck .box{width:6.8mm;height:6.8mm;border:.45mm solid var(--blue);border-radius:1.2mm;
+background:#fff;margin-top:.2mm}
+.ck .no2{font-family:var(--font-head);font-size:12pt;font-weight:700;
+color:var(--blue);text-align:right;line-height:1.5}
+.ck .q{font-size:12.5pt;line-height:1.45;color:var(--ink);margin:0}
+.ck .q b{font-weight:700}
+.ck .yn{font-family:var(--font-head);font-size:11.5pt;font-weight:700;white-space:nowrap;
+padding:1mm 2.6mm;border-radius:99mm;margin-top:-.2mm}
+.ck .yn.w{background:#E0ECFB;color:var(--blue-d)}
+.ck .yn.i{background:#E7E9ED;color:var(--ink-2)}
+
+/* 5면 : 내용 높이에 맞추고 세로 중앙 */
+/* 5면 : 제목은 기준 위치, 콘텐츠만 남은 공간의 가운데 */
+#p5 .vs{grid-auto-rows:min-content}
+#p5 .cases .stack{flex:0 0 auto}
+#p5 > .vs{flex:0 0 auto;margin-top:auto;margin-bottom:0}
+#p5 > .cases{flex:0 0 auto;margin-bottom:auto}
+#p8 .ck{padding:4.2mm 5mm}
+
+#p8 blockquote{padding:3.2mm 4mm;margin-bottom:3mm}
+#p8 blockquote p{font-size:12.5pt;line-height:1.45}
+
+/* 뉴트럴 바탕 면 : 요소는 흰색으로 */
+.sheet.tint-gray .ck:nth-child(odd){background:#fff}
+.sheet.tint-gray .ck:nth-child(even){background:#E8ECF1}
+.sheet.tint-gray blockquote{background:#fff}
+
+/* 제목 → 서브카피 간격 통일 */
+.ptitle:has(+ .psub),.ptitle:has(+ .lead),
+.imp-title:has(+ .imp-sub),.imp-title:has(+ .lead){margin-bottom:6mm}
+
+/* 10면 : 표를 내용 크기로 두고 가운데 */
+
+/* 9면 : 단 비교 + 신고 표 한 면 */
+
+
+
+/* 좌우 분할 (제목은 전폭, 콘텐츠만 둘로) */
+.split{display:grid;grid-template-columns:1.45fr 1fr;gap:9mm;flex:1;min-height:0}
+.sp-l,.sp-r{display:flex;flex-direction:column;min-width:0}
+.sp-r h2.sec{margin-top:0}
+
+
+/* 9면 : 산재·고용 라벨과 값을 가로로 */
+#p9 .cols .kv{display:grid;grid-template-columns:10mm 1fr;gap:2.6mm;align-items:baseline;
+padding-top:2mm;margin-top:2mm}
+#p9 .cols .kv .k{margin:0}
+
+/* 10면 : 표를 자연 높이로 두고 세로 가운데 */
+#p10 > table{flex:0 0 auto;margin:auto 0}
+#p10 .ptitle{margin-bottom:0}
+#p10 .pfoot{margin-top:0}
+
+/* 줄바꿈은 단어 단위 */
+.sheet,.sheet *{word-break:keep-all;line-break:strict;overflow-wrap:break-word}
+
+/* 13면 : 직접 처리 vs 위탁 — 좌측을 경고색, 우측을 브랜드색으로 뒤집음 */
+#p13 .vs .hd.ok{background:#FDEEE9}
+#p13 .vs .hd.ok .ic{background:#C2410C}
+#p13 .vs .hd.ok .t{color:#9A3412}
+#p13 .vs .cell.ok{background:#FEF7F4;border-top-color:rgba(194,65,12,.18)}
+#p13 .vs .hd.ng{background:#E7F1FD}
+#p13 .vs .hd.ng .ic{background:var(--blue)}
+#p13 .vs .hd.ng .t{color:var(--blue-d)}
+#p13 .vs .cell.ng{background:#F5FAFF;border-top-color:rgba(17,90,198,.18)}
+#p13 .vs{grid-template-columns:1fr 32mm 1fr}
+#p13 .vs .cell{padding:2mm 5mm}
+#p13 .vs .lb{padding:2mm 1.6mm}
+#p13 .vs .hd{padding:2.4mm 5mm}
+#p13{--t-gap:4mm;--f-gap:5mm}
+
+/* ===== 서비스 소개 블록 ===== */
+.svc-stat{display:grid;grid-template-columns:repeat(3,1fr);gap:0;background:#F2F7FD;
+border-radius:2.5mm;padding:4.6mm 2mm;margin:0 0 6mm}
+.svc-stat .st{text-align:center;padding:0 4mm}
+.svc-stat .st+.st{border-left:.3mm solid rgba(17,90,198,.18)}
+.svc-stat .k3{font-size:12pt;color:var(--ink-3);margin:0 0 1.6mm}
+.svc-stat .v3{font-family:var(--font-head);font-size:21pt;font-weight:900;
+letter-spacing:-.04em;color:var(--blue-d);line-height:1.1;margin:0}
+.svc-stat .v3 small{font-size:13pt;font-weight:700;margin-left:.6mm}
+.svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:3.4mm;margin:0 0 5mm}
+.svc{border:.35mm solid var(--line);border-radius:2.5mm;background:#F8FDFF;padding:4mm 4.6mm}
+.svc h4{font-family:var(--font-head);font-size:14pt;font-weight:700;color:var(--blue-d);
+margin:0 0 2.4mm}
+.svc p{font-size:13pt;line-height:1.5;color:var(--ink-2);margin:0}
+.svc p strong{color:var(--ink);font-weight:700}
+.svc-foot{display:flex;align-items:center;justify-content:space-between;gap:6mm;
+background:var(--blue);border-radius:2.5mm;padding:4mm 5mm}
+.svc-foot .msg{font-family:var(--font-head);font-size:15pt;font-weight:700;color:#fff;margin:0}
+.svc-foot .ct{font-size:12.5pt;color:rgba(255,255,255,.9);text-align:right;line-height:1.5;margin:0}
+.svc-foot .ct b{font-family:var(--font-head);font-size:14pt;color:#fff}
+
+/* ===== qa-list : 7면 띠 형식의 Q&A ===== */
+.qa-list{display:flex;flex-direction:column;gap:0;margin:0}
+.qrow{display:grid;grid-template-columns:54mm 1fr;gap:6mm;align-items:start;
+background:#EFF4FB;padding:3.6mm 4.4mm}
+.qrow:nth-child(even){background:#E3ECF8}
+.sheet.tint-blue .qrow{background:#fff}
+.sheet.tint-blue .qrow:nth-child(even){background:#F2F7FD}
+.qrow .qq{font-family:var(--font-head);font-size:14pt;font-weight:700;line-height:1.3;
+color:var(--blue-d);letter-spacing:-.02em;margin:0;display:grid;
+grid-template-columns:auto 1fr;gap:2.4mm;align-items:baseline}
+.qrow .qq .qn{font-size:12pt;font-weight:900;color:var(--blue)}
+.qrow .body{display:flex;flex-direction:column;gap:1.8mm}
+.qrow .sit2{font-size:12pt;line-height:1.45;color:var(--ink-3);margin:0;
+display:grid;grid-template-columns:auto 1fr;gap:2.4mm}
+.qrow .sit2 b{font-family:var(--font-head);font-size:11.5pt;font-weight:700;
+color:var(--ink-3);white-space:nowrap}
+.qrow .ans2{font-size:13pt;line-height:1.5;color:var(--ink-2);margin:0;
+display:grid;grid-template-columns:auto 1fr;gap:2.4mm}
+.qrow .ans2 b{font-family:var(--font-head);font-size:12.5pt;font-weight:900;
+color:var(--blue);white-space:nowrap}
+.qrow .ans2 strong{color:var(--ink);font-weight:700}
+
+/* ===== qa-cards : 문항별 카드 ===== */
+.qa-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:4mm;margin:0}
+.qcard{border:.35mm solid var(--line);border-radius:2.5mm;background:#fff;
+padding:4mm 4.6mm;display:flex;flex-direction:column;gap:2.6mm}
+.qcard .qh{display:grid;grid-template-columns:auto 1fr;gap:2.6mm;align-items:baseline;margin:0}
+.qcard .qn2{font-family:var(--font-head);font-size:13pt;font-weight:900;color:#fff;
+background:var(--blue);border-radius:99mm;padding:.8mm 2.6mm;line-height:1.2}
+.qcard .qt2{font-family:var(--font-head);font-size:14pt;font-weight:700;line-height:1.35;
+color:var(--blue-d);letter-spacing:-.02em}
+.qcard .sit3{font-size:12.5pt;line-height:1.45;color:var(--ink-2);margin:0;
+background:#F1F3F6;border-radius:2mm;padding:2.8mm 3.4mm}
+.qcard .ans3{font-size:14pt;line-height:1.5;color:var(--ink);margin:0;
+background:var(--blue-pale);border-radius:2mm;padding:3mm 3.4mm}
+.qcard .ans3 b{font-family:var(--font-head);font-size:15pt;font-weight:900;
+color:var(--blue);margin-right:2.4mm}
+.qcard .ans3 strong{color:var(--ink);font-weight:700}
+
+/* 과태료 자가점검 : 1열 + 금액·근거 칸 */
+.chklist.one{grid-template-columns:1fr;gap:0}
+.chklist.one .ck{grid-template-columns:6.8mm 1fr auto auto;gap:4mm;align-items:center}
+.chklist.one .law{font-size:11.5pt;color:var(--ink-3);white-space:nowrap;
+padding-left:4mm;border-left:.3mm solid var(--line)}
+#p16 .ck{padding:2.4mm 5mm}
+#p16 .ck .q{font-size:12.5pt;font-weight:400;color:var(--ink)}
+#p16 .ck .yn{font-size:12pt;padding:.8mm 2.4mm}
+#p16{--t-gap:5mm;--f-gap:5mm}
+
+/* 17면 : 8행 요율표 */
+#p17{--t-gap:5mm;--f-gap:5mm}
+#p17 th,#p17 td{padding:2mm 2.6mm;font-size:12pt;line-height:1.35}
+#p17 blockquote{padding:3mm 4mm;margin-bottom:0}
+#p17 blockquote p{font-size:12.5pt}
+#p17 > table{margin-bottom:5mm}
+
+/* ===== 변경안 카드 ===== */
+.chg{display:grid;grid-template-columns:repeat(2,1fr);gap:3.4mm;margin:0}
+.chg .c{border:.35mm solid var(--line);border-radius:2.5mm;background:#F8FDFF;
+padding:3.4mm 4.2mm;display:flex;flex-direction:column;gap:2mm}
+.chg .c .tag{display:inline-flex;align-self:flex-start;font-family:var(--font-head);
+font-size:11pt;font-weight:700;color:var(--blue-d);background:#E0ECFB;
+border-radius:99mm;padding:1mm 2.6mm}
+.chg .c h4{font-family:var(--font-head);font-size:14pt;font-weight:700;color:var(--ink);
+line-height:1.3;margin:0}
+.chg .c .shift{font-family:var(--font-head);font-size:17pt;font-weight:900;
+letter-spacing:-.03em;color:var(--blue);line-height:1.2;margin:0}
+.chg .c .shift .old{color:var(--ink-3);font-weight:700}
+.chg .c .shift .ar3{color:var(--ink-3);margin:0 1.6mm;font-size:14pt}
+.chg .c p{font-size:12pt;line-height:1.45;color:var(--ink-2);margin:0}
+.chg .c.todo{background:#F7F8FA;border-style:dashed}
+
+/* ===== gantt : 1~31일 간트 ===== */
+.gantt{display:grid;grid-template-columns:48mm repeat(31,1fr);align-content:start;flex:1;min-height:0}
+.gantt .gh{font-family:var(--font-head);font-size:9.5pt;font-weight:700;color:var(--ink-3);
+text-align:center;padding:2mm 0 2.4mm;border-bottom:.5mm solid var(--blue);line-height:1}
+.gantt .gh.corner{text-align:left;font-size:11pt;color:var(--ink-2);padding-left:1mm}
+.gantt{grid-template-columns:62mm repeat(31,1fr)}
+.gantt .lb4{padding:2.4mm 3mm 2.4mm 1mm;border-bottom:.35mm solid rgba(17,90,198,.22);
+border-right:.5mm solid rgba(17,90,198,.3);display:flex;flex-direction:column;
+justify-content:center;gap:.8mm}
+.gantt .lb4 .t6{font-family:var(--font-head);font-size:11pt;font-weight:700;
+line-height:1.25;color:var(--ink)}
+.gantt .lb4 .p6{font-size:9.5pt;line-height:1.3;color:var(--ink-3)}
+.gantt .lb4 .p6 b{font-weight:700;color:var(--ink-2)}
+.gantt .cellbg{border-bottom:.35mm solid rgba(17,90,198,.22);
+border-right:.3mm dashed rgba(17,90,198,.16)}
+.gantt .lb4.alt,.gantt .cellbg.alt{background:#F4F7FB}
+.gantt .bar{align-self:center;justify-self:stretch;height:6.6mm;border-radius:0;
+background:var(--blue);display:flex;align-items:center;justify-content:center;
+font-family:var(--font-head);font-size:10pt;font-weight:700;color:#fff;white-space:nowrap;
+margin:0 .8mm;z-index:1}
+.gantt .bar.soft{background:#D5E4F8;color:var(--blue-d)}
+.gantt .bar.pin{background:#C2410C;font-size:9pt}
+.gantt-note{display:flex;gap:6mm;margin:3.4mm 0 0;font-size:11.5pt;color:var(--ink-3)}
+.gantt-note b{color:var(--ink-2);font-weight:700}
+#p19{--t-gap:5mm;--f-gap:5mm}
+#p19 th,#p19 td{padding:2.2mm 3mm;font-size:12pt;line-height:1.4}
+#p19 blockquote{margin-bottom:0}
+#p20 > table{flex:0 0 auto;margin:auto 0 5mm}
+#p20 .ptitle{margin-bottom:0}
+.cta-box .todo{display:block;font-size:11pt;color:var(--ink-3);margin-top:.8mm}
+
+/* 마지막 면 연락처 */
+.cta-cyan .ct2{display:flex;align-items:center;gap:7mm}
+.cta-cyan .msg2{font-family:var(--font-head);font-size:15pt;font-weight:700;
+line-height:1.35;margin:0}
+.cta-cyan .inf2{font-size:12.5pt;line-height:1.55;margin:0;
+padding-left:7mm;border-left:.35mm solid rgba(255,255,255,.35)}
+.cta-cyan .inf2 b{font-family:var(--font-head);font-size:17pt;font-weight:900;
+letter-spacing:-.02em}
+
+/* ===== 뒷표지 ===== */
+.sheet.back{background:linear-gradient(145deg,#0D2F7A 0%,#114797 46%,#2B6FD6 100%);
+color:#fff;padding:18mm 16mm 34mm;justify-content:flex-start}
+.back .ptitle{color:#fff;font-size:30pt;line-height:1.25;margin:0 0 5mm}
+.back .lead2{font-size:15pt;line-height:1.7;color:rgba(255,255,255,.88);margin:0 0 9mm}
+.back .lead2 strong{color:#fff;font-weight:700}
+
+/* 도해 — 입력(가로 띠) → 자동 생성 5종 */
+.back .dia{display:flex;flex-direction:column;align-items:center;gap:0;margin:0 auto auto;
+width:68%}
+.back .inp{width:100%;background:rgba(255,255,255,.14);
+border:.35mm solid rgba(255,255,255,.45);border-radius:2.5mm;
+padding:4.4mm 3mm;display:flex;flex-direction:column;align-items:center;gap:3mm;
+text-align:center}
+.back .inp .t7{font-family:var(--font-head);font-size:15pt;font-weight:700;color:#fff;
+line-height:1.3;margin:0}
+.back .inp .t7 em{font-style:normal;font-size:24pt;letter-spacing:-.04em;margin-right:.6mm}
+.back .inp .s7{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;
+gap:2mm;margin:0;padding-top:3mm;border-top:.3mm solid rgba(255,255,255,.28);width:100%}
+.back .inp .s7 span{background:rgba(255,255,255,.26);
+border:.35mm solid rgba(255,255,255,.6);border-radius:99mm;padding:1.8mm 3.4mm;
+font-family:var(--font-head);font-size:11.5pt;font-weight:700;line-height:1.3;
+color:#fff;white-space:nowrap}
+.back .arw5{font-size:15pt;color:rgba(255,255,255,.7);line-height:1;margin:3mm 0}
+.back .outs{width:100%;display:flex;flex-direction:column;gap:2.6mm}
+.back .outs .k8{font-family:var(--font-head);font-size:15pt;font-weight:700;color:#fff;
+margin:0;text-align:center;line-height:1.3}
+.back .outs .seq{display:flex;align-items:stretch;gap:0}
+.back .outs .st9{flex:1;background:rgba(255,255,255,.95);border-radius:2mm;
+padding:3.4mm 1.4mm;font-family:var(--font-head);font-size:12pt;font-weight:700;
+color:var(--blue-d);line-height:1.3;text-align:center;display:flex;
+align-items:center;justify-content:center}
+.back .outs .ar9{flex:none;width:4.6mm;display:flex;align-items:center;justify-content:center;
+color:rgba(255,255,255,.6);font-size:10.5pt}
+.back .dia .cap8{font-size:11pt;line-height:1.5;color:rgba(255,255,255,.78);
+margin:4mm 0 0;text-align:center}
+.back .dia .cap8 strong{color:#fff;font-weight:700}
+
+/* 하단 띠 */
+.back .cta2{position:absolute;left:0;right:0;bottom:0;
+display:flex;align-items:center;justify-content:space-between;gap:8mm;
+background:rgba(0,0,0,.18);padding:5mm 16mm}
+.back .cta2 .ctl{display:flex;align-items:center;padding-right:7mm;
+border-right:.35mm solid rgba(255,255,255,.3)}
+.back .cta2 .ctl .logo{display:flex;align-items:center;gap:2.4mm;color:#fff}
+.back .cta2 .ctl .logo-sym{height:8mm;width:auto}
+.back .cta2 .ctl .logo-type{height:6.4mm;width:auto;color:#fff}
+.back .cta2 .inf3{display:flex;align-items:baseline;gap:3.4mm;font-size:13pt;
+line-height:1.4;color:rgba(255,255,255,.9);margin:0;white-space:nowrap}
+.back .cta2 .inf3 b{font-family:var(--font-head);font-size:19pt;font-weight:900;
+letter-spacing:-.02em;color:#fff}
+.back .cta2 .inf3 .sep{color:rgba(255,255,255,.4)}
+.back .cta2 .inf3 b{font-family:var(--font-head);font-size:19pt;font-weight:900;
+letter-spacing:-.02em;color:#fff}
+.back .cta2 .qr2{width:24mm;height:24mm;border-radius:2mm;background:rgba(255,255,255,.92);
+display:flex;align-items:center;justify-content:center;font-family:var(--font-head);
+font-size:11pt;font-weight:700;color:var(--blue-d);text-align:center;line-height:1.3;flex:none}
+.back .blogo{display:flex;align-items:center;gap:3mm;margin:0 0 auto}
+.back .blogo .logo{color:#fff}
+
+/* 뒷표지 김반장 소개 */
+.back .kbz{border-top:.35mm solid rgba(255,255,255,.3);padding-top:5mm;margin-top:6mm}
+/* 상담 카드 : 로고 + 문구 한 묶음 */
+.back .cta2 .ctl{display:flex;align-items:center;
+padding-right:7mm;border-right:.35mm solid rgba(255,255,255,.3)}
+.back .cta2 .ctl .logo{display:flex;align-items:center;gap:2.4mm;color:#fff}
+.back .cta2 .ctl .logo-sym{height:8mm;width:auto}
+.back .cta2 .ctl .logo-type{height:6.4mm;width:auto;color:#fff}
+.back .kbz h3{font-family:var(--font-head);font-size:15pt;font-weight:700;color:#fff;
+margin:0 0 2.4mm}
+.back .kbz p{font-size:12.5pt;line-height:1.6;color:rgba(255,255,255,.82);margin:0}
+.back .kbz strong{color:#fff;font-weight:700}
+
+/* 뒷표지 서비스 도해 */
+.back .flowdia{display:grid;grid-template-columns:auto 6mm 1fr;gap:0 3mm;align-items:center}
+.back .inbox{background:rgba(255,255,255,.14);border:.35mm solid rgba(255,255,255,.4);
+border-radius:2.5mm;padding:3.4mm 4mm;text-align:center}
+.back .inbox .t7{font-family:var(--font-head);font-size:13.5pt;font-weight:700;color:#fff;
+line-height:1.3;margin:0 0 1.6mm}
+.back .inbox .s7{font-size:11pt;line-height:1.45;color:rgba(255,255,255,.75);margin:0}
+.back .arw4{font-size:15pt;color:#8FC2FF;text-align:center;line-height:1}
+.back .chain{display:flex;align-items:center;gap:2mm;flex-wrap:nowrap}
+.back .chain .st7{background:rgba(255,255,255,.92);border-radius:2mm;padding:2.4mm 2.6mm;
+font-family:var(--font-head);font-size:10.5pt;font-weight:700;color:var(--blue-d);
+line-height:1.3;text-align:center;white-space:nowrap}
+.back .chain .ar4{color:#8FC2FF;font-size:11pt;line-height:1;flex:none}
+.back .diacap{font-size:11.5pt;line-height:1.5;color:rgba(255,255,255,.78);margin:3mm 0 0;
+grid-column:3}
+/* Q&A 행형 (2026.10 수정) */
+.qa-cards{grid-template-columns:1fr;gap:3.5mm}
+.qcard{display:grid;grid-template-columns:96mm 1fr;gap:0;padding:0;overflow:hidden;align-items:stretch}
+.qcard .qh{padding:5mm 5.4mm;align-items:start;align-content:center;border-right:.35mm solid var(--line)}
+.qcard .qt2{font-size:15pt}
+.qcard .ans3{border-radius:0;padding:5mm 6mm;display:flex;align-items:center;gap:0;font-size:14pt;line-height:1.6}
+.qcard .ans3 b{align-self:flex-start;margin-right:3mm}
+.qcard .ans3{display:block;position:relative;padding:5mm 6mm 5mm 13mm;align-self:center}
+.qcard .ans3 b{position:absolute;left:6mm;top:5mm;margin:0}
+.qcard .ans3{background:transparent}.qcard .qh{background:var(--blue-pale);align-self:stretch}
+.qcard .qh{background:#DCE8F8;border-right:none;box-shadow:inset 1.4mm 0 0 var(--blue)}.qcard{border-color:rgba(17,90,198,.22)}
+.qcard .qh{box-shadow:none}
+.qcard .qh{align-content:start;align-items:start}.qcard .ans3{align-self:stretch}
+.qcard .qn2{position:relative;top:.5mm}
+.pgno{font-size:12pt}
+</style></head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="kbz-sym" viewBox="0 0 38 29"><path d="M7.40096e-09 12.4292L1.22431e-08 13.9035C1.36603e-08 14.335 0.227434 14.7425 0.598511 14.9702L19.3918 26.8365C20.1938 27.3399 21.2352 27.256 21.9414 26.6207L37.0718 12.9925C37.3351 12.7528 37.4907 12.4052 37.4907 12.0456L37.4907 10.1758L19.9185 23.3245L7.40096e-09 12.4292Z" fill="url(#paint0_linear_2066_30050)"/>
+<path d="M0.538472 13.1842L19.3676 24.7747C20.1457 25.2542 21.1392 25.1583 21.8215 24.559L37.2511 10.715C37.5743 10.4274 37.5384 9.89996 37.2152 9.61229C37.1314 9.54038 37.0477 9.48045 36.9519 9.42052L18.1347 0.74257C17.3566 0.263125 16.3631 0.359014 15.6808 0.95832L0.251186 11.8897C-0.0720099 12.1893 -0.0720099 12.6568 0.251186 12.9564C0.346948 13.0403 0.44271 13.1122 0.550442 13.1842L0.538472 13.1842Z" fill="url(#paint1_linear_2066_30050)"/>
+<path d="M28.7284 24.9197L28.7284 28.4796C28.7284 28.4796 14.0529 23.6731 14.1726 12.0586C14.1726 12.0586 19.7388 21.6235 28.7284 24.9077L28.7284 24.9197Z" fill="url(#paint2_linear_2066_30050)"/>
+<path d="M31.7212 2.30105L31.7212 4.47054C31.7212 4.47054 19.0208 6.4003 17.4766 12.0577L16.9619 8.92937L19.0208 5.12977L22.1929 3.34384L26.6458 2.28906L31.7092 2.28906L31.7212 2.30105Z" fill="url(#paint3_linear_2066_30050)"/>
+<path d="M31.745 22.2109L31.745 25.4112L28.7285 28.4797L28.7285 24.9198L28.7285 23.6133L31.745 22.2109Z" fill="url(#paint4_linear_2066_30050)"/>
+<path d="M19.4155 15.9895C18.0868 14.5032 17.4643 12.981 17.5601 11.4827C17.7277 8.85774 20.1936 6.29271 24.3233 4.45883C26.5019 3.48796 29.0036 2.76879 31.7209 2.31332L26.6934 8.26842e-08C19.4035 2.1575 14.4957 6.25675 14.1845 11.2789C14.0289 13.6881 14.9745 16.1093 16.8898 18.2549C19.4514 21.1195 23.653 23.4448 28.7283 24.9311L31.7448 22.2223C26.3582 20.9637 21.8694 18.7463 19.4035 16.0015L19.4155 15.9895Z" fill="#F5D824"/>
+<path d="M8.53443 2.553L8.53443 4.57866C8.53443 4.57866 10.9883 8.65393 10.9285 12.7532L12.6642 9.64878L12.1016 6.68821L10.9285 4.45879L8.52246 2.54102L8.53443 2.553Z" fill="url(#paint5_linear_2066_30050)"/>
+<path d="M9.32479 24.4513C9.32479 24.4513 14.879 19.7408 14.077 11.6621L9.45647 18.674L8.98963 20.388L8.78613 22.6654L9.31282 24.4513L9.32479 24.4513Z" fill="url(#paint6_linear_2066_30050)"/>
+<path d="M6.70313 20.8561L6.70313 22.7739L9.3246 24.452L9.3246 22.4743L8.98944 20.3887L6.70313 20.8561Z" fill="url(#paint7_linear_2066_30050)"/>
+<path d="M11.5271 1.60547L8.53457 2.55237C10.0428 5.0335 11.2159 8.68926 11.0603 11.494C10.8688 15.0659 9.26475 18.2901 6.70313 20.8552L9.3246 22.4733C12.1137 19.4888 13.8494 15.7731 14.0768 11.6738C14.2683 8.11393 13.4902 4.69789 11.5271 1.61745L11.5271 1.60547Z" fill="url(#paint8_linear_2066_30050)"/>
+<defs>
+<linearGradient id="paint0_linear_2066_30050" x1="2.79111e-08" y1="18.6739" x2="37.4788" y2="18.6739" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1A2E57"/>
+<stop offset="1" stop-color="#21A2DC"/>
+</linearGradient>
+<linearGradient id="paint1_linear_2066_30050" x1="17.3806" y1="6.18427" x2="21.0166" y2="19.8101" gradientUnits="userSpaceOnUse">
+<stop stop-color="#064A96"/>
+<stop offset="1" stop-color="#21A2DC"/>
+</linearGradient>
+<linearGradient id="paint2_linear_2066_30050" x1="14.1726" y1="20.2691" x2="28.7284" y2="20.2691" gradientUnits="userSpaceOnUse">
+<stop stop-color="#CB5620"/>
+<stop offset="1" stop-color="#F5D824"/>
+</linearGradient>
+<linearGradient id="paint3_linear_2066_30050" x1="28.3217" y1="1.61784" x2="17.7009" y2="13.0505" gradientUnits="userSpaceOnUse">
+<stop stop-color="#CB5620"/>
+<stop offset="1" stop-color="#F5D824"/>
+</linearGradient>
+<linearGradient id="paint4_linear_2066_30050" x1="31.5774" y1="24.8599" x2="24.405" y2="27.4667" gradientUnits="userSpaceOnUse">
+<stop stop-color="#CB5620"/>
+<stop offset="1" stop-color="#F5D824"/>
+</linearGradient>
+<linearGradient id="paint5_linear_2066_30050" x1="8.53443" y1="7.65909" x2="12.6642" y2="7.65909" gradientUnits="userSpaceOnUse">
+<stop stop-color="#6D6E70"/>
+<stop offset="1" stop-color="#E7E8E9"/>
+</linearGradient>
+<linearGradient id="paint6_linear_2066_30050" x1="13.2271" y1="13.4121" x2="9.07568" y2="24.7834" gradientUnits="userSpaceOnUse">
+<stop stop-color="#6D6E70"/>
+<stop offset="1" stop-color="#E7E8E9"/>
+</linearGradient>
+<linearGradient id="paint7_linear_2066_30050" x1="6.57145" y1="21.1558" x2="11.8051" y2="23.7153" gradientUnits="userSpaceOnUse">
+<stop stop-color="#6D6E70"/>
+<stop offset="1" stop-color="#E7E8E9"/>
+</linearGradient>
+<linearGradient id="paint8_linear_2066_30050" x1="10.1027" y1="2.31265" x2="10.4147" y2="16.1206" gradientUnits="userSpaceOnUse">
+<stop stop-color="#DCDCDD"/>
+<stop offset="0.1" stop-color="#EAEAEB"/>
+<stop offset="0.24" stop-color="#F6F6F6"/>
+<stop offset="0.44" stop-color="#FDFDFD"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+</defs></symbol>
+  <symbol id="kbz-type" viewBox="0 0 72 22"><path d="M11.9014 1.96976e-07L11.9014 1.75828C11.9014 4.99265 10.3514 7.2936 7.25142 8.68286C5.38708 9.50773 2.96994 9.98529 3.31518e-08 10.0938L2.30637e-08 7.02226C2.38462 6.95714 4.32484 6.58812 5.80981 5.90435C7.4682 5.15545 8.29198 4.15692 8.29198 2.90876L0.314338 2.90876L0.314338 0.0108538L11.8906 0.0108538L11.9014 1.96976e-07ZM1.14896 11.5156L19.2721 11.5156L19.2721 18.3643C19.2721 19.3411 19.1203 19.9706 18.806 20.2636C18.4808 20.5567 17.7871 20.6978 16.7357 20.6978L2.81819 20.6978C2.25455 20.6978 1.83182 20.5675 1.58252 20.307C1.28986 20.0357 1.14896 19.5473 1.14896 18.8744L1.14896 11.5156ZM15.8686 14.4895L4.53078 14.4895L4.53078 17.7022L15.8686 17.7022L15.8686 14.4895ZM15.8469 1.84018e-07L19.2721 1.72768e-07L19.2721 10.2783L15.8469 10.2783L15.8469 1.84018e-07Z" fill="currentColor"/>
+<path d="M37.1574 9.18213C37.1574 9.8659 37.0165 10.3543 36.7238 10.6474C36.4637 10.9078 36.0518 11.0381 35.4773 11.0381L26.5458 11.0381C25.993 11.0381 25.5919 10.9078 25.3318 10.6474C25.0608 10.3543 24.9199 9.8659 24.9199 9.18213L24.9199 2.36065e-07L28.3451 2.24815e-07L28.3451 2.4312L33.743 2.4312L33.743 2.07087e-07L37.1465 1.95908e-07L37.1465 9.18213L37.1574 9.18213ZM26.0689 13.1545L29.4941 13.1545L29.4941 17.6588L44.3654 17.6588L44.3654 20.6978L27.749 20.6978C27.1853 20.6978 26.7626 20.5784 26.5133 20.3288C26.2206 20.0357 26.0797 19.5473 26.0797 18.8635L26.0797 13.1328L26.0689 13.1545ZM28.3559 8.00994L33.7539 8.00994L33.7539 5.35081L28.3559 5.35081L28.3559 8.00994ZM44.192 7.35873L44.192 14.2507L40.7668 14.2507L40.7668 1.84018e-07L44.192 1.72768e-07L44.192 4.28716L46.9668 4.28716L46.9668 7.35873L44.192 7.35873Z" fill="currentColor"/>
+<path d="M62.1413 1.95339e-07L62.1413 2.97388L57.7622 2.97388C57.9573 3.89644 58.3584 4.66704 58.9762 5.26399C59.735 6.01288 60.8297 6.50129 62.2388 6.75093L62.2388 9.92017C60.9598 9.85505 59.7458 9.49688 58.6185 8.84567C57.4696 8.19445 56.5916 7.36958 55.9954 6.3602C55.3776 7.36958 54.4454 8.20531 53.1989 8.86737C52.0283 9.49688 50.8793 9.85505 49.7412 9.92017L49.7412 6.75093C51.1503 6.523 52.2234 6.03459 52.9496 5.28569C53.5458 4.66704 53.9251 3.89644 54.066 2.97388L49.8279 2.97388L49.8279 2.3578e-07L62.1413 1.95339e-07ZM66.0434 10.6908C67.5175 11.9389 68.2546 13.5127 68.2546 15.4121C68.2546 17.3115 67.5175 18.8961 66.0434 20.1659C64.6776 21.349 63.0843 21.9459 61.2524 21.9459C59.4206 21.9459 57.8056 21.349 56.4615 20.1659C55.0199 18.8961 54.2937 17.3115 54.2937 15.4121C54.2937 13.5127 55.0199 11.9389 56.4615 10.6908C57.8056 9.50773 59.4098 8.91079 61.2524 8.91079C63.0951 8.91079 64.6668 9.50773 66.0434 10.6908ZM58.8895 13.0351C58.1741 13.6864 57.8164 14.4787 57.8164 15.4229C57.8164 16.3672 58.1741 17.1595 58.8895 17.8107C59.5724 18.4402 60.3636 18.7658 61.2741 18.7658C62.1846 18.7658 62.9975 18.4511 63.6804 17.8107C64.3958 17.1595 64.7535 16.3672 64.7535 15.4229C64.7535 14.4787 64.3958 13.6864 63.6804 13.0351C62.9975 12.4165 62.1954 12.1126 61.2741 12.1126C60.3528 12.1126 59.5724 12.4165 58.8895 13.0351ZM69.1 6.523L69.1 9.90932L65.664 9.90932L65.664 1.83769e-07L69.1 1.72483e-07L69.1 3.484L71.8748 3.484L71.8748 6.53385L69.1 6.53385L69.1 6.523Z" fill="currentColor"/></symbol>
+</svg>
+
+<button class="printbar" onclick="window.print()">PDF로 저장</button>
+<div class="sheet sheet--cover" id="p1">
+  <div class="cover cover--c5">
+    <div class="imgslot cover-illu"><span>이미지 자리</span>3D 오브젝트 · 안전모 + 서류 폴더<br>150 × 120mm · 투명 배경 PNG</div>
+    <div class="kicker">건설사 4대보험·퇴직공제 실무 가이드 &nbsp;&rsaquo;&nbsp; VOL.1</div>
+    <h1 class="cover-title">우리 현장 인력,<br>어떻게 분류하고<br>신고하나요</h1>
+    
+    <div class="cover-foot">
+      <div class="brand"><a class="logolink" href="#" target="_blank" rel="noopener"><span class="logo"><svg class="logo-sym" viewBox="0 0 38 29"><use href="#kbz-sym"/></svg><svg class="logo-type" viewBox="0 0 72 22" role="img" aria-label="김반장"><use href="#kbz-type"/></svg></span></a><span>건설 4대보험·퇴직공제 해결사</span></div>
+      <div class="legal"><span class="pubdate"></span> 발행</div>
+    </div>
+  </div>
+</div>
+
+<div class="sheet sheet--toc" id="p2">
+  <div class="toc-ad">
+    <div class="imgslot"><span>광고 이미지</span>김반장 서비스 홍보<br>94 × 210mm · 재단 포함 세로형</div>
+  </div>
+  <div class="topbar"><div class="crumb"><span>목차</span></div></div>
+  <div class="tocwrap2">
+    <div class="toc-right">
+      <div class="toclist"><a class="tl" href="#p3"><span class="n">01</span><span class="t">일용·상용근로자와 프리랜서의 차이 및 &quot;3.3% 처리&quot;의 위험</span><span class="p">3</span></a><a class="tl" href="#p6"><span class="n">02</span><span class="t">위장 프리랜서로 판정되면 무엇이 청구되나요</span><span class="p">6</span></a><a class="tl" href="#p9"><span class="n">03</span><span class="t">근로자도 프리랜서도 아닌 세 번째 유형, 노무제공자</span><span class="p">9</span></a><a class="tl" href="#p13"><span class="n">04</span><span class="t">그래서 어떻게 하면 되나요</span><span class="p">13</span></a><a class="tl" href="#p15"><span class="n">Q&amp;A</span><span class="t">판단이 애매할 때</span><span class="p">15</span></a><a class="tl" href="#p16"><span class="n">부록 ①</span><span class="t">과태료 자가점검</span><span class="p">16</span></a><a class="tl" href="#p17"><span class="n">부록 ②</span><span class="t">제도 한 장 요약 — 2026년 요율</span><span class="p">17</span></a><a class="tl" href="#p19"><span class="n">부록 ③</span><span class="t">매월 신고 캘린더</span><span class="p">19</span></a></div>
+    </div>
+    
+  </div>
+  <div class="pfoot"><a class="logolink" href="#" target="_blank" rel="noopener"><span class="logo"><svg class="logo-sym" viewBox="0 0 38 29"><use href="#kbz-sym"/></svg><svg class="logo-type" viewBox="0 0 72 22" role="img" aria-label="김반장"><use href="#kbz-type"/></svg></span></a><span class="slogan">건설 4대보험·퇴직공제 해결사</span><div class="pgno"><b>02</b> / 21</div></div>
+</div>
+
+<div class="sheet" id="p3">
+  <div class="topbar"><div class="crumb"><b class="cn">01</b><span>일용·상용근로자와 프리랜서의 차이 및 &quot;3.3% 처리&quot;의 위험</span></div><div class="nav"><a href="#p3" class="on">01</a><a href="#p6">02</a><a href="#p9">03</a><a href="#p13">04</a><a href="#p15">Q&amp;A</a><a href="#p16">부록</a></div></div>
+  <h1 class="ptitle">일용·상용근로자와 프리랜서, 어떻게 다른가요</h1>
+  <div class="cols"><div class="col"><p class="lb">1개월 미만</p><p class="ti">일용근로자</p><p class="df">고용기간 <strong>1개월 미만</strong>·1일 단위 계약(동일 현장 반복 시 기간 정해 계약 가능)</p><div class="kv"><span class="k">대표 예</span><span class="v">현장 기능인·잡부</span></div><div class="kv"><span class="k">4대보험 신고</span><span class="v"><strong>매월</strong>: 근로내용확인·건강연금 대상자·퇴직공제 근로내역 확정</span></div></div><div class="col"><p class="lb">1개월 이상</p><p class="ti">상용근로자</p><p class="df">기간 정함 없거나 <strong>1개월 이상 계속</strong> 고용</p><div class="kv"><span class="k">대표 예</span><span class="v">본사·관리직·정규 기능인</span></div><div class="kv"><span class="k">4대보험 신고</span><span class="v"><strong>건별</strong>: 취득·상실·보수변경·이직확인</span></div></div><div class="col"><p class="lb">독립사업자</p><p class="ti">프리랜서</p><p class="df">근로자가 아닌 <strong>독립 사업자</strong>로 결과물을 공급 — 사업소득 <strong>3.3%</strong> 원천징수</p><div class="kv"><span class="k">대표 예</span><span class="v">방수 1식 도급, 자기 인력·장비를 가진 전문 시공팀, 설계·감리 용역</span></div><div class="kv"><span class="k">4대보험 신고</span><span class="v">4대보험 <strong>없음</strong>(근로자가 아닐 때만)</span></div></div></div>
+  <div class="banner"><span class="mk">!</span><div><p>계약서상 '일용'이라도 <span class="u2">실질이 계속근무면 상용</span>(퇴직금 발생). 간헐·호출식은 일용.</p><p><strong>3.3%는 세금 신고 방식일 뿐</strong> — 근로자·노무제공자·독립사업자를 가르는 신분 표시가 아닙니다.</p></div></div>
+  <div class="pfoot"><a class="logolink" href="#" target="_blank" rel="noopener"><span class="logo"><svg class="logo-sym" viewBox="0 0 38 29"><use href="#kbz-sym"/></svg><svg class="logo-type" viewBox="0 0 72 22" role="img" aria-label="김반장"><use href="#kbz-type"/></svg></span></a><span class="slogan">건설 4대보험·퇴직공제 해결사</span><div class="pgno"><b>03</b> / 21</div></div>
+</div>
+
+<div class="sheet dense" id="p4">
+  <div class="topbar"><div class="crumb"><b class="cn">01</b><span>일용·상용근로자와 프리랜서의 차이 및 &quot;3.3% 처리&quot;의 위험</span></div><div class="nav"><a href="#p3" class="on">01</a><a href="#p6">02</a><a href="#p9">03</a><a href="#p13">04</a><a href="#p15">Q&amp;A</a><a href="#p16">부록</a></div></div>
+  <h1 class="ptitle">"3.3%로 처리하면 편하다"가 위험한 이유</h1>
+  <div class="lead"><p>근로감독관·공단·법원은 계약서 이름이 아니라 <span class="em2">실제 작업관계</span>를 봅니다.</p></div><table><colgroup><col style="width:18%"><col style="width:41%"><col style="width:41%"></colgroup><thead><tr><th>판단 요소</th><th>이런 모습이면 근로자</th><th>이런 모습이면 독립사업자</th></tr></thead><tbody><tr><td><strong>업무 배정·지휘</strong></td><td>조회 후 반장·소장이 오늘 어느 동·층에서 무엇을 할지 정하고 방법·순서·재작업까지 지시</td><td>공정 범위·완성 기준만 약정, 방법은 작업자가 결정(안전·공정 접점 협의만)</td></tr><tr><td><strong>시간·장소 구속</strong></td><td>07:00 출근·조회 참석·휴무 승인, 지각·결근에 감점·교체</td><td>납기 안에서 시간·순서를 스스로 선택</td></tr><tr><td><strong>인력 대체</strong></td><td>본인이 빠지면 회사 승인 없이 다른 사람을 못 넣음</td><td>자기 팀을 직접 채용·교체·임금 지급</td></tr><tr><td><strong>자재·장비·손익</strong></td><td>철근·거푸집·타일·장비를 회사가 대고, 재시공·인건비 초과도 회사 부담</td><td>핵심 장비·자재를 자기 비용으로, 미완성·하자 시 손실 부담</td></tr><tr><td><strong>보수</strong></td><td>출근일·시간에 따른 일당·월 고정액</td><td>완성 수량·기성 단가, 하자보수 후 잔금</td></tr><tr><td><strong>전속성</strong></td><td>한 회사 현장만 장기간, 다른 일 사실상 불가</td><td>동시에 여러 현장·거래처</td></tr></tbody></table><blockquote><p>기본급 유무·3.3% 원천징수·4대보험 미가입은 <strong>회사가 임의로 정할 수 있는 것</strong>이라 판단의 보조지표에 불과합니다<span class="cite">대법원 2004다29736</span>.<br>자기 장비 소유도 결론이 아닙니다 — 자기 굴삭기로 일했지만 현장관리자 지시를 받아 근로자로 인정된 사례<span class="cite">서울행정법원 2015구합65476</span>.</p></blockquote>
+  <div class="pfoot"><a class="logolink" href="#" target="_blank" rel="noopener"><span class="logo"><svg class="logo-sym" viewBox="0 0 38 29"><use href="#kbz-sym"/></svg><svg class="logo-type" viewBox="0 0 72 22" role="img" aria-label="김반장"><use href="#kbz-type"/></svg></span></a><span class="slogan">건설 4대보험·퇴직공제 해결사</span><div class="pgno"><b>04</b> / 21</div></div>
+</div>
+
+<div class="sheet" id="p5">
+  <div class="topbar"><div class="crumb"><b class="cn">01</b><span>일용·상용근로자와 프리랜서의 차이 및 &quot;3.3% 처리&quot;의 위험</span></div><div class="nav"><a href="#p3" class="on">01</a><a href="#p6">02</a><a href="#p9">03</a><a href="#p13">04</a><a href="#p15">Q&amp;A</a><a href="#p16">부록</a></div></div>
+  <h1 class="ptitle">사례로 보는 정당한 독립도급 vs 위장 프리랜서</h1>
+  <div class="vs"><div class="hd ok"><span class="ic">✓</span><span class="t">정당한 독립도급</span></div><div class="vschip">VS</div><div class="hd ng"><span class="ic">!</span><span class="t">위장 프리랜서</span></div><div class="cell ok"><div class="in">"방수공사 1식 600만 원"<br>— 완성 기준·하자책임·기성 조건 명시</div></div><div class="lb">계약</div><div class="cell ng"><div class="in">"프리랜서 계약"이라 쓰고<br>실제 대가는 <strong>일 18만 원·월 고정액</strong></div></div><div class="cell ok"><div class="in">자기 인력·장비·자재로 방법과 시간을 정하고<br>다른 현장도 수행</div></div><div class="lb">현장 운영</div><div class="cell ng"><div class="in">매일 조회, 회사가 층·구역·순서 지정,<br>휴무 승인, 대체 인력 불가</div></div><div class="cell ok"><div class="in">미완성·재시공·인건비 초과를 본인이 부담</div></div><div class="lb">손익·결과</div><div class="cell ng"><div class="in">자재·장비·재작업비는 회사 부담,<br>출근일수만큼 지급</div></div></div>
+  <div class="cases"><div class="stack ok"><div class="cs ok"><div><p class="nm2">방수 수급인</p><p class="fact">발수제·기계 직접 준비,<br>미완성 시 50만 원만 수령</p></div><div class="res"><span class="arw">→</span><span class="bg">근로자 아님</span></div></div><div class="cs ok"><div><p class="nm2">전통 목수</p><p class="fact">6,500만 원 완성계약,<br>일용공 직접 고용</p></div><div class="res"><span class="arw">→</span><span class="bg">근로자 아님</span></div></div></div><p class="lb2">판정 예</p><div class="stack ng"><div class="cs ng"><div><p class="nm2">설비·배관공</p><p class="fact">사고 후 작성한 하도급계약서,<br>회사 자재·현장관리자 지시, 일 10~13만 원</p></div><div class="res"><span class="arw">→</span><span class="bg">근로자</span></div></div><div class="cs ng"><div><p class="nm2">외벽 타일·석공</p><p class="fact">㎡ 2만 8천 원 단가,<br>회사가 석재·비계·도면 제공·방법 지시</p></div><div class="res"><span class="arw">→</span><span class="bg">근로자</span></div></div></div></div>
+  <div class="pfoot"><a class="logolink" href="#" target="_blank" rel="noopener"><span class="logo"><svg class="logo-sym" viewBox="0 0 38 29"><use href="#kbz-sym"/></svg><svg class="logo-type" viewBox="0 0 72 22" role="img" aria-label="김반장"><use href="#kbz-type"/></svg></span></a><span class="slogan">건설 4대보험·퇴직공제 해결사</span><div class="pgno"><b>05</b> / 21</div></div>
+</div>
+
+<div class="sheet tint-blue" id="p6">
+  <div class="impact">
+    <div class="topbar"><div class="crumb"><b class="cn">02</b><span>위장 프리랜서로 판정되면 무엇이 청구되나요</span></div><div class="nav"><a href="#p3">01</a><a href="#p6" class="on">02</a><a href="#p9">03</a><a href="#p13">04</a><a href="#p15">Q&amp;A</a><a href="#p16">부록</a></div></div>
+  <div class="side"><div class="side-l"><h1 class="imp-title">가짜 3.3% 계약 후 위장 판정 시 발생하는 위험</h1><p class="imp-sub">2025.12.~2026.3. 고용노동부 '가짜 3.3' 기획감독 : 세무자료와 노동자료를 교차 확인하는 감독이 현실화됐습니다.</p><div class="flow"><div class="fact"><p class="k2">점검한 108개소 중</p><div class="bar"><i>72개소 적발</i><b>67%</b></div><div class="one"><span class="n5">1,070명</span><span class="t5">위장 3.3 근로자 확인</span></div></div><div class="gap2"><span class="a3">↓</span><span class="c3">전원 고용·산재보험 소급 가입</span></div><div class="hit"><span class="n4">5억 2천만 원</span><span class="t4">과거 보험료 부과 (2026.7.1. 후속조치)</span></div></div></div><div class="side-r"><div class="items"><div class="itm"><p class="hd3">4대보험 소급</p><ul><li><span>자격 정정 + 보험료(사업주분·근로자분) — <span class="hi">징수권 소멸시효 3년 범위</span>. 이미 떠난 일용근로자의 부담분은 회수 곤란</span></li><li class="src4"><span>보험별 적용요건(나이·시간·국적)은 다시 심사 — "무조건 3년 전액"은 아님</span></li></ul></div><div class="itm"><p class="hd3">연체금</p><ul><li><span>납기 다음 날부터 일 1/1,500(30일까지 최대 2%) + 이후 일 1/6,000<span class="hi">(전체 최대 5%)</span></span></li><li class="src4"><span>징수법 §25</span></li></ul></div><div class="itm"><p class="hd3">고용보험 미신고 과태료<span class="amt3">100만</span></p><ul><li><span>피보험자 <span class="hi">1명당 3만 원</span>(차수별 상한 100만 원) / 거짓 신고 5·8·10만 원(상한 100·200·300만 원)</span></li><li class="src4"><span>고용보험법 §118 — "3.3% 사업자"로 보고한 것이 미신고인지 거짓인지는 사실관계별</span></li></ul></div><div class="itm"><p class="hd3">산재 미신고 중 재해<span class="amt3">50%</span></p><ul><li><span>공단이 지급한 <span class="hi">보험급여의 50% 징수</span>(미신고 기간 보험료의 5배 상한) — 보험료 체납 중 재해는 10%</span></li><li class="src4"><span>징수법 §26 — 실제 징수 사례: 급여액의 50% = 1,245만 원</span></li></ul></div></div></div></div>
+  <div class="pfoot"><a class="logolink" href="#" target="_blank" rel="noopener"><span class="logo"><svg class="logo-sym" viewBox="0 0 38 29"><use href="#kbz-sym"/></svg><svg class="logo-type" viewBox="0 0 72 22" role="img" aria-label="김반장"><use href="#kbz-type"/></svg></span></a><span class="slogan">건설 4대보험·퇴직공제 해결사</span><div class="pgno"><b>06</b> / 21</div></div>
+  </div>
+</div>
+
+<div class="sheet tint-blue" id="p7" style="--grid-gap:2mm;--ic-pad:1.8mm">
+  <div class="topbar"><div class="crumb"><b class="cn">02</b><span>위장 프리랜서로 판정되면 무엇이 청구되나요</span></div><div class="nav"><a href="#p3">01</a><a href="#p6" class="on">02</a><a href="#p9">03</a><a href="#p13">04</a><a href="#p15">Q&amp;A</a><a href="#p16">부록</a></div></div>
+  <div class="side"><div class="side-l"><h1 class="imp-title">가짜 3.3% 계약 후 위장 판정 시 발생하는 위험</h1><p class="imp-sub">2025.12.~2026.3. 고용노동부 '가짜 3.3' 기획감독 : 세무자료와 노동자료를 교차 확인하는 감독이 현실화됐습니다.</p><div class="flow"><div class="fact"><p class="k2">점검한 108개소 중</p><div class="bar"><i>72개소 적발</i><b>67%</b></div><div class="one"><span class="n5">1,070명</span><span class="t5">위장 3.3 근로자 확인</span></div></div><div class="gap2"><span class="a3">↓</span><span class="c3">전원 고용·산재보험 소급 가입</span></div><div class="hit"><span class="n4">5억 2천만 원</span><span class="t4">과거 보험료 부과 (2026.7.1. 후속조치)</span></div></div></div><div class="side-r"><div class="items"><div class="itm"><p class="hd3">임금·수당 소급</p><ul><li><span>주휴수당·연차수당 재계산(<span class="hi">임금채권 3년</span>), 미지급 시 근기법 §109(3년/3천만 원)</span></li><li class="src4"><span>출역일보·이체내역으로 재산정</span></li></ul></div><div class="itm"><p class="hd3">퇴직금</p><ul><li><span>계속근로 <span class="hi">1년↑·주 15시간↑</span>이면 발생 — 1년당 30일분 평균임금, 퇴직 14일 내</span></li><li class="src4"><span>'일용' 호칭이어도 실질 계속근로면 발생</span></li></ul></div><div class="itm"><p class="hd3">근로계약서<span class="amt3">500만</span></p><ul><li><span>미작성·미교부 <span class="hi">벌금 500만 원 이하</span></span></li><li class="src4"><span>근기법 §17·§114</span></li></ul></div><div class="itm"><p class="hd3">세무 정정</p><ul><li><span>사업소득 지급명세서 취소·수정 → 근로소득(일용) 지급명세서·원천징수이행상황신고 수정 → 지방소득세 수정. <span class="hi">정액이 아니라 귀속월·가산세에 따라 다름</span></span></li><li class="src4"><span>근로자가 종합소득세 신고를 마쳤다면 근로자 측 경정도 연동</span></li></ul></div><div class="itm"><p class="hd3">퇴직공제<span class="amt3">300만</span></p><ul><li><span>근로일수 미신고·공제부금 미납 과태료 100/200/300만 원, 관계성립 미신고 <span class="hi">300/400/500만 원</span> + 소급 신고·납부</span></li><li class="src4"><span>건설근로자법 §26·시행령 별표 2</span></li></ul></div></div></div></div>
+  <div class="pfoot"><a class="logolink" href="#" target="_blank" rel="noopener"><span class="logo"><svg class="logo-sym" viewBox="0 0 38 29"><use href="#kbz-sym"/></svg><svg class="logo-type" viewBox="0 0 72 22" role="img" aria-label="김반장"><use href="#kbz-type"/></svg></span></a><span class="slogan">건설 4대보험·퇴직공제 해결사</span><div class="pgno"><b>07</b> / 21</div></div>
+</div>
+
+<div class="sheet tint-gray" id="p8" style="--t-gap:5mm;--f-gap:5mm">
+  <div class="topbar"><div class="crumb"><b class="cn">02</b><span>위장 프리랜서로 판정되면 무엇이 청구되나요</span></div><div class="nav"><a href="#p3">01</a><a href="#p6" class="on">02</a><a href="#p9">03</a><a href="#p13">04</a><a href="#p15">Q&amp;A</a><a href="#p16">부록</a></div></div>
+  <div class="side"><div class="side-l"><h1 class="ptitle">계약 전 자가진단</h1><p class="psub">'예'가 어느 쪽에 몰리는지 보세요</p><blockquote><p><strong>1~5가 반복해서 '예'이고 9~10이 '아니오'면</strong> 계약 전에 근로자 처리를 검토하는 편이 안전합니다.</p></blockquote><blockquote><p><strong>장비 소유·사업자등록·세금계산서·3.3%는 결론이 아닙니다.</strong> 판단 순서는 ① 근로자인가 → ② 법정 직종 노무제공자인가 → ③ 둘 다 아니면 독립사업자.</p></blockquote><blockquote><p><strong>프리랜서 ≠ 노무제공자.</strong> "3.3%니까 노무제공자"가 아닙니다 — 법정 직종만 해당하며, 형틀·철근 등 기능인은 3.3%로 처리해도 근로자입니다.</p></blockquote></div><div class="side-r"><div class="chklist"><div class="ck"><span class="box"></span><span class="no2">1</span><p class="q">회사 반장·소장이 매일 개인별 작업구역·순서·방법을 정하는가</p><span class="yn w">근로자</span></div><div class="ck"><span class="box"></span><span class="no2">2</span><p class="q">출근·퇴근·휴무·결근을 회사가 기록하고 승인하는가</p><span class="yn w">근로자</span></div><div class="ck"><span class="box"></span><span class="no2">3</span><p class="q">지각·작업속도를 이유로 임금 삭감·교체·불이익을 주는가</p><span class="yn w">근로자</span></div><div class="ck"><span class="box"></span><span class="no2">4</span><p class="q">다른 숙련자를 자유롭게 대체 투입하거나 보조자를 채용할 수 <b>없는가</b></p><span class="yn w">근로자</span></div><div class="ck"><span class="box"></span><span class="no2">5</span><p class="q">완성 수량과 무관하게 일당·월 고정액을 지급하는가</p><span class="yn w">근로자</span></div><div class="ck"><span class="box"></span><span class="no2">6</span><p class="q">주요 자재·장비·소모품·숙식을 회사가 부담하는가</p><span class="yn w">근로자</span></div><div class="ck"><span class="box"></span><span class="no2">7</span><p class="q">하자·재작업·인건비 초과·장비 고장 손실을 회사가 부담하는가</p><span class="yn w">근로자</span></div><div class="ck"><span class="box"></span><span class="no2">8</span><p class="q">그 기간 다른 현장·거래처 일을 사실상 할 수 없는가</p><span class="yn w">근로자</span></div><div class="ck"><span class="box"></span><span class="no2">9</span><p class="q">자기 명의로 견적·기성 청구하고 자기 인력의 임금·보험을 처리하는가</p><span class="yn i">독립사업자</span></div><div class="ck"><span class="box"></span><span class="no2">10</span><p class="q">미완성·하자 때 대금을 못 받거나 자기 비용으로 재시공하는가</p><span class="yn i">독립사업자</span></div></div></div></div>
+  <div class="pfoot"><a class="logolink" href="#" target="_blank" rel="noopener"><span class="logo"><svg class="logo-sym" viewBox="0 0 38 29"><use href="#kbz-sym"/></svg><svg class="logo-type" viewBox="0 0 72 22" role="img" aria-label="김반장"><use href="#kbz-type"/></svg></span></a><span class="slogan">건설 4대보험·퇴직공제 해결사</span><div class="pgno"><b>08</b> / 21</div></div>
+</div>
+
+<div class="sheet" id="p9">
+  <div class="topbar"><div class="crumb"><b class="cn">03</b><span>근로자도 프리랜서도 아닌 세 번째 유형, 노무제공자</span></div><div class="nav"><a href="#p3">01</a><a href="#p6">02</a><a href="#p9" class="on">03</a><a href="#p13">04</a><a href="#p15">Q&amp;A</a><a href="#p16">부록</a></div></div>
+  <h1 class="ptitle">노무제공자 바로알기</h1>
+  <p class="psub"><strong>노무제공자</strong>는 근로자는 아니지만 다른 사람의 사업을 위해 직접 노무를 제공하고 대가를 받기로 계약한 사람 중 <strong>법이 정한 직종</strong>입니다. 근로자가 아니어도 <strong>산재·고용보험이 적용</strong>됩니다(보험료 각 1/2). 2021.7.1.부터 근로자 관리번호와 별도 관리번호로 운영합니다.</p>
+  <div class="cols"><div class="col"><div><p class="lb">기계를 조종</p><p class="ti">건설기계조종사</p></div><p class="df">굴삭기·덤프·크레인 등 건설기계를 조종하는 사람(자기 기계가 없거나 다른 사업장 소속이어도 가능)</p><div class="kvs"><div class="kv"><span class="k">산재</span><span class="v">기준보수 월 2,813,000원 · 요율 <strong>34.6‰</strong></span></div><div class="kv"><span class="k">고용</span><span class="v">실업급여만</span></div></div></div><div class="col"><div><p class="lb">3종 화물차</p><p class="ti">건설현장 화물차주</p></div><p class="df">살수차 · 카고크레인(직진식·굴절식) · 고소작업차 3종</p><div class="kvs"><div class="kv"><span class="k">산재</span><span class="v">기준보수 동일 · 요율 <strong>34.6‰</strong></span></div><div class="kv"><span class="k">고용</span><span class="v">●</span></div></div></div><div class="col"><div><p class="lb">그 외 화물차</p><p class="ti">일반 화물차주</p></div><p class="df">위 3종 외 화물자동차(자재 운송 등)</p><div class="kvs"><div class="kv"><span class="k">산재</span><span class="v">요율 <strong>17.6‰</strong></span></div><div class="kv"><span class="k">고용</span><span class="v">●</span></div></div></div></div>
+  
+  <div class="pfoot"><a class="logolink" href="#" target="_blank" rel="noopener"><span class="logo"><svg class="logo-sym" viewBox="0 0 38 29"><use href="#kbz-sym"/></svg><svg class="logo-type" viewBox="0 0 72 22" role="img" aria-label="김반장"><use href="#kbz-type"/></svg></span></a><span class="slogan">건설 4대보험·퇴직공제 해결사</span><div class="pgno"><b>09</b> / 21</div></div>
+</div>
+
+<div class="sheet" id="p10">
+  <div class="topbar"><div class="crumb"><b class="cn">03</b><span>근로자도 프리랜서도 아닌 세 번째 유형, 노무제공자</span></div><div class="nav"><a href="#p3">01</a><a href="#p6">02</a><a href="#p9" class="on">03</a><a href="#p13">04</a><a href="#p15">Q&amp;A</a><a href="#p16">부록</a></div></div>
+  <h1 class="ptitle">노무제공자 신고와 기한</h1>
+  <table><colgroup><col style="width:9%"><col style="width:37%"><col style="width:34%"><col style="width:20%"></colgroup><thead><tr><th></th><th>산재</th><th>고용</th><th>건강·연금</th></tr></thead><tbody><tr><td><strong>신고</strong></td><td>별도 관리번호 성립(기존 건설 자진신고 사업장은 산재 성립 불필요) → 입직·이직</td><td>별도 성립(14일) → 취득·상실·월 보수액 신고·휴업</td><td>직장가입 대상 아님</td></tr><tr><td><strong>기한</strong></td><td>다음 달 15일 / 자진신고 현장은 3월 보험료 신고 시 일괄</td><td>취득 다음 달 15일 · 월 보수액 매월 말일</td><td>—</td></tr></tbody></table>
+  <div class="pfoot"><a class="logolink" href="#" target="_blank" rel="noopener"><span class="logo"><svg class="logo-sym" viewBox="0 0 38 29"><use href="#kbz-sym"/></svg><svg class="logo-type" viewBox="0 0 72 22" role="img" aria-label="김반장"><use href="#kbz-type"/></svg></span></a><span class="slogan">건설 4대보험·퇴직공제 해결사</span><div class="pgno"><b>10</b> / 21</div></div>
+</div>
+
+<div class="sheet" id="p11">
+  <div class="topbar"><div class="crumb"><b class="cn">03</b><span>근로자도 프리랜서도 아닌 세 번째 유형, 노무제공자</span></div><div class="nav"><a href="#p3">01</a><a href="#p6">02</a><a href="#p9" class="on">03</a><a href="#p13">04</a><a href="#p15">Q&amp;A</a><a href="#p16">부록</a></div></div>
+  <h1 class="ptitle">같은 굴삭기 기사라도 세 갈래</h1>
+  <table><colgroup><col style="width:32%"><col style="width:16%"><col style="width:52%"></colgroup><thead><tr><th>실제 모습</th><th>분류</th><th>판정 예</th></tr></thead><tbody><tr><td>회사가 배차·작업시간·운행경로를 정하고, 대체기사·다른 영업을 막고, 유류·수리 등 주요 비용을 부담</td><td><strong>근로자</strong></td><td>자기 굴삭기로 일했지만 현장관리자 상주 지시 → 근로자(서울행정법원 2015구합65476) / 운전용역 도급·사업자등록이었지만 배차·운행일지 지시 → 근로자(대법원 2007두9471)</td></tr><tr><td>본인이 등록 건설기계를 직접 운전해 노무 제공, 근로자 수준의 종속은 없음</td><td><strong>노무제공자</strong></td><td>산재·고용 특례 신고(앞 표)</td></tr><tr><td>차주가 기사를 고용할 수 있고 수리·유류·사고·가동손실을 부담하며 여러 현장과 거래</td><td><strong>독립사업자</strong></td><td>월 430만 원 기본 + 시간 정산 덤프 차주, 운반 위치 지시는 조정 수준 → 근로자 아님(대법원 2006다27093)</td></tr></tbody></table>
+  <blockquote><p>정리: <strong>근로자(일용·상용) / 노무제공자(법정 직종) / 프리랜서(사업소득)</strong> — 신고 방법과 관리번호가 모두 다릅니다.</p></blockquote>
+  <div class="pfoot"><a class="logolink" href="#" target="_blank" rel="noopener"><span class="logo"><svg class="logo-sym" viewBox="0 0 38 29"><use href="#kbz-sym"/></svg><svg class="logo-type" viewBox="0 0 72 22" role="img" aria-label="김반장"><use href="#kbz-type"/></svg></span></a><span class="slogan">건설 4대보험·퇴직공제 해결사</span><div class="pgno"><b>11</b> / 21</div></div>
+</div>
+
+<div class="sheet tint-blue" id="p12">
+  <div class="topbar"><div class="crumb"><b class="cn">03</b><span>근로자도 프리랜서도 아닌 세 번째 유형, 노무제공자</span></div><div class="nav"><a href="#p3">01</a><a href="#p6">02</a><a href="#p9" class="on">03</a><a href="#p13">04</a><a href="#p15">Q&amp;A</a><a href="#p16">부록</a></div></div>
+  <h1 class="ptitle">실무에서 자주 착각하는 것</h1>
+  <div class="items"><div class="itm"><p class="hd3"><strong>판단 순서가 있습니다</strong></p><ul><li><span>① 근로자인가(지휘·감독·임금) → ② 아니면 법정 직종 노무제공자인가 → ③ 둘 다 아니면 독립사업자. 노무제공자 직종 코드에 해당해도 <strong>근로자성이 먼저</strong></span></li></ul></div><div class="itm"><p class="hd3"><strong>"3.3%니까 노무제공자"가 아닙니다</strong></p><ul><li><span>법정 직종만 해당. 형틀·철근 등 기능인은 3.3% 처리해도 노무제공자가 아니라 <strong>근로자</strong>(앞 장)</span></li></ul></div><div class="itm"><p class="hd3"><strong>보조기사는 노무제공자가 아님</strong></p><ul><li><span>근로자로 신고. 건설기계 업체 <strong>소속 근로자</strong>도 노무제공자가 아님(업체 <strong>대표</strong>는 가능)</span></li></ul></div><div class="itm"><p class="hd3"><strong>장비 임대차(장비+기사)</strong></p><ul><li><span>vs <strong>기사 개인 노무계약</strong> — 계약서에 따라 신고 주체가 달라짐. 임대차면 임대업체가 사업주</span></li></ul></div><div class="itm"><p class="hd3"><strong>산재 기준보수와 고용 기준보수는 별개 고시</strong></p><ul><li><span>산재는 두 직종(건설기계조종사·건설현장 화물차주)만, 고용은 건설업 전체 기준보수</span></li></ul></div><div class="itm"><p class="hd3"><strong>65세 이후 신규 계약자는 고용 적용 제외</strong></p><ul><li><span>(65세 전부터 유지 중이면 계속)</span></li></ul></div><div class="itm"><p class="hd3"></p><ul><li><span>노무제공자 보수는 <strong>직접 고용 근로자 보수총액에 포함</strong>해 확정보험료 신고 — 빠뜨리면 과소신고</span></li></ul></div></div>
+  <div class="pfoot"><a class="logolink" href="#" target="_blank" rel="noopener"><span class="logo"><svg class="logo-sym" viewBox="0 0 38 29"><use href="#kbz-sym"/></svg><svg class="logo-type" viewBox="0 0 72 22" role="img" aria-label="김반장"><use href="#kbz-type"/></svg></span></a><span class="slogan">건설 4대보험·퇴직공제 해결사</span><div class="pgno"><b>12</b> / 21</div></div>
+</div>
+
+<div class="sheet" id="p13">
+  <div class="topbar"><div class="crumb"><b class="cn">04</b><span>그래서 어떻게 하면 되나요</span></div><div class="nav"><a href="#p3">01</a><a href="#p6">02</a><a href="#p9">03</a><a href="#p13" class="on">04</a><a href="#p15">Q&amp;A</a><a href="#p16">부록</a></div></div>
+  <h1 class="ptitle">우리 현장 인력, 김반장 프리미엄으로 정확하게 신고하세요</h1>
+  <p class="psub">인력을 올바르게 구분해 신고하는 일, 혼자 판단하기 어렵습니다.<br><strong>비용을 최소화하는 방법은 정확한 근로자 신고에 있습니다.</strong></p>
+  <div class="vs"><div class="hd ok"><span class="ic">!</span><span class="t">직접 처리하면</span></div><div class="vschip">VS</div><div class="hd ng"><span class="ic">✓</span><span class="t">김반장 프리미엄에 맡기면</span></div><div class="cell ok"><div class="in">계약서에 뭐라 썼든 <strong>실제 작업관계로 판정</strong>되므로, 틀린 채로 신고되면 소급 정산이 됩니다</div></div><div class="lb">유형 판단</div><div class="cell ng"><div class="in">판단이 애매한 건은 <strong>4대보험 전문가에게 확인</strong>받을 수 있습니다</div></div><div class="cell ok"><div class="in">고용·산재, 건강·연금, 퇴직공제의 <strong>시스템과 서식이 각각</strong> 다릅니다</div></div><div class="lb">입력</div><div class="cell ng"><div class="in">김반장 3.0에 기입한 근로자 정보가 <strong>공단별 서식에 맞게 정리</strong>됩니다</div></div><div class="cell ok"><div class="in">건강 8일, 연금 8일·60시간·220만 — <strong>보험마다 기준이 달라</strong> 매달 다시 따져야 합니다</div></div><div class="lb">대상자 산출</div><div class="cell ng"><div class="in">월출역 데이터로 <strong>4대보험 대상자를 즉시 산출</strong>합니다</div></div><div class="cell ok"><div class="in">일용·노무제공자·상용의 <strong>창구와 서식이 모두 달라</strong> 건마다 따로 처리해야 합니다</div></div><div class="lb">신고</div><div class="cell ng"><div class="in">사회보험관리사 <strong>전담팀이 유형에 맞게 신고</strong>합니다</div></div><div class="cell ok"><div class="in">누락이나 지연은 <strong>소급 가입 · 보험료 · 과태료</strong>로 돌아옵니다</div></div><div class="lb">결과</div><div class="cell ng"><div class="in">전문가 대행으로 <strong>법령 위반에 따른 과태료를 사전에 방지</strong>합니다</div></div></div>
+  <div class="pfoot"><a class="logolink" href="#" target="_blank" rel="noopener"><span class="logo"><svg class="logo-sym" viewBox="0 0 38 29"><use href="#kbz-sym"/></svg><svg class="logo-type" viewBox="0 0 72 22" role="img" aria-label="김반장"><use href="#kbz-type"/></svg></span></a><span class="slogan">건설 4대보험·퇴직공제 해결사</span><div class="pgno"><b>13</b> / 21</div></div>
+</div>
+
+<div class="sheet" id="p14">
+  <div class="topbar"><div class="crumb"><b class="cn">04</b><span>그래서 어떻게 하면 되나요</span></div><div class="nav"><a href="#p3">01</a><a href="#p6">02</a><a href="#p9">03</a><a href="#p13" class="on">04</a><a href="#p15">Q&amp;A</a><a href="#p16">부록</a></div></div>
+  <h1 class="ptitle">우리 현장 인력, 김반장 프리미엄으로 정확하게 신고하세요</h1>
+  <p class="psub">노무대장만 전송하면 <strong>전문가로 구성된 전담팀이 4대보험·퇴직공제 신고업무를 처리</strong>하는 BPO 서비스입니다.</p>
+  <div class="svc-stat"><div class="st"><p class="k3">1998년부터 한 길만 걸어온</p><p class="v3">28년<small>이상</small></p></div><div class="st"><p class="k3">건설업 4대보험 BPO 부문 점유율</p><p class="v3">10년<small>연속 1위</small></p></div><div class="st"><p class="k3">김반장 프리미엄을 선택한 건설사</p><p class="v3">10,000<small>개 돌파</small></p></div></div>
+  <div class="svc-grid"><div class="svc"><h4>불필요한 비용 지출 최소화</h4><p>인건비 고정지출 대비 저렴한 전문가 대행으로 <strong>법령 위반으로 발생하는 과태료를 사전에 방지</strong>합니다.</p></div><div class="svc"><h4>체계적인 시스템으로 업무 효율 극대화</h4><p>노무대장 전송만으로 <strong>4대보험·퇴직공제 신고를 원스톱 처리</strong>합니다. 공단별로 각각 확인할 필요가 없습니다.</p></div><div class="svc"><h4>검증된 4대보험 전문팀 배정</h4><p><strong>사회보험관리사로 구성된 전담팀</strong>이 이용사의 업무를 신속·정확하게 처리합니다.</p></div><div class="svc"><h4>28년 노하우가 담긴 안정적인 서비스</h4><p>내부 개발 조직이 <strong>법령 개정·제도 변경안을 즉시 반영</strong>합니다.</p></div></div>
+  <div class="svc-foot"><p class="msg">상담 신청하고 업무 효율을 높여보세요</p><p class="ct"><b>1588-3818</b><br>premium@kbz.co.kr · www.kbz.co.kr</p></div>
+  <div class="pfoot"><a class="logolink" href="#" target="_blank" rel="noopener"><span class="logo"><svg class="logo-sym" viewBox="0 0 38 29"><use href="#kbz-sym"/></svg><svg class="logo-type" viewBox="0 0 72 22" role="img" aria-label="김반장"><use href="#kbz-type"/></svg></span></a><span class="slogan">건설 4대보험·퇴직공제 해결사</span><div class="pgno"><b>14</b> / 21</div></div>
+</div>
+
+<div class="sheet tint-blue" id="p15">
+  <div class="topbar"><div class="crumb"><b class="cn">Q&amp;A</b><span>판단이 애매할 때</span></div><div class="nav"><a href="#p3">01</a><a href="#p6">02</a><a href="#p9">03</a><a href="#p13">04</a><a href="#p15" class="on">Q&amp;A</a><a href="#p16">부록</a></div></div>
+  <h1 class="ptitle">판단이 애매할 때</h1>
+  <div class="qa-cards"><div class="qcard"><p class="qh"><span class="qn2">Q</span><span class="qt2">계약서는 일용인데 사실상 매일 나와요</span></p><p class="ans3"><b>A</b>실질이 계속근무면 <strong>상용(퇴직금·연차·주휴)</strong>으로 처리합니다. 계약 형식보다 실질이 기준이며, 3.3% 처리도 같은 원리입니다.</p></div><div class="qcard"><p class="qh"><span class="qn2">Q</span><span class="qt2">일용인데 며칠씩 계속 나와요</span></p><p class="ans3"><b>A</b>1개월 이상 + 월 8일↑(연금은 220만↑·60시간↑ 포함)이면 <strong>직장가입 대상자 신고</strong>. 근로내용확인신고는 대상자 여부와 무관하게 전원.</p></div><div class="qcard"><p class="qh"><span class="qn2">Q</span><span class="qt2">여러 현장을 오갔는데 퇴직금 계속근로로 보나요?</span></p><p class="ans3"><b>A</b><strong>동일 사업주면 통산</strong> 🟨 [확인 필요: 판례 번호] — 현장 이동은 단절이 아님. 간헐·호출식으로 공백이 길면 계속근로 인정이 어려움. 퇴직공제 적립일수는 별개로 누적.</p></div></div>
+  <div class="pfoot"><a class="logolink" href="#" target="_blank" rel="noopener"><span class="logo"><svg class="logo-sym" viewBox="0 0 38 29"><use href="#kbz-sym"/></svg><svg class="logo-type" viewBox="0 0 72 22" role="img" aria-label="김반장"><use href="#kbz-type"/></svg></span></a><span class="slogan">건설 4대보험·퇴직공제 해결사</span><div class="pgno"><b>15</b> / 21</div></div>
+</div>
+
+<div class="sheet tint-gray" id="p16">
+  <div class="topbar"><div class="crumb"><b class="cn">부록 ①</b><span>과태료 자가점검</span></div><div class="nav"><a href="#p3">01</a><a href="#p6">02</a><a href="#p9">03</a><a href="#p13">04</a><a href="#p15">Q&amp;A</a><a href="#p16" class="on">부록</a></div></div>
+  <h1 class="ptitle">과태료 자가점검 — 놓치면 얼마인가요</h1>
+  <div class="chklist one"><div class="ck"><span class="box"></span><p class="q">보험관계 성립·변경 미신고/거짓</p><span class="yn w">100/200/300만</span><span class="law">고용산재보험료징수법</span></div><div class="ck"><span class="box"></span><p class="q">보수총액·개산확정 미신고/거짓</p><span class="yn w">100/200/300만</span><span class="law">고용산재보험료징수법</span></div><div class="ck"><span class="box"></span><p class="q">피보험자 고용개시·종료(근로내용확인) 미신고</p><span class="yn w">인당 <strong>3만</strong>(100만 한도) / 거짓 5·8·10만</span><span class="law">고용보험법</span></div><div class="ck"><span class="box"></span><p class="q">퇴직공제 근로내역 미신고 / 원가 미계상</p><span class="yn w">각 <strong>300만</strong></span><span class="law">건설근로자법</span></div><div class="ck"><span class="box"></span><p class="q">전자카드 미발급 (단말기 미설치 — '27~ 300만 예정)</p><span class="yn w">최대 <strong>300만</strong></span><span class="law">건설근로자법</span></div><div class="ck"><span class="box"></span><p class="q">KISCON 미통보</p><span class="yn w"><strong>100/200/400만</strong></span><span class="law">건산법 §22</span></div><div class="ck"><span class="box"></span><p class="q"><strong>근로계약서 작성·교부 의무</strong> 위반(서면명시)</p><span class="yn w">벌금 <strong>500만</strong></span><span class="law">근기법 §17·§114</span></div><div class="ck"><span class="box"></span><p class="q">임금대장 미작성 / 임금명세서 미교부</p><span class="yn w">각 <strong>500만</strong> 이하</span><span class="law">근기법 §48·§116②2호</span></div><div class="ck"><span class="box"></span><p class="q">일용 지급명세서 미제출</p><span class="yn w">가산세 <strong>1%</strong>(지연 0.5%)</span><span class="law">소득세법</span></div><div class="ck"><span class="box"></span><p class="q">임금·퇴직금 미청산(14일)</p><span class="yn w">3년 / <strong>3천만</strong></span><span class="law">근기법 §109</span></div><div class="ck"><span class="box"></span><p class="q">보험료 납부 지연</p><span class="yn w">30일까지 1/1,500 · 31~210일 1/6,000 일 가산</span><span class="law">징수법</span></div></div>
+  <div class="pfoot"><a class="logolink" href="#" target="_blank" rel="noopener"><span class="logo"><svg class="logo-sym" viewBox="0 0 38 29"><use href="#kbz-sym"/></svg><svg class="logo-type" viewBox="0 0 72 22" role="img" aria-label="김반장"><use href="#kbz-type"/></svg></span></a><span class="slogan">건설 4대보험·퇴직공제 해결사</span><div class="pgno"><b>16</b> / 21</div></div>
+</div>
+
+<div class="sheet" id="p17">
+  <div class="topbar"><div class="crumb"><b class="cn">부록 ②</b><span>제도 한 장 요약 — 2026년 요율</span></div><div class="nav"><a href="#p3">01</a><a href="#p6">02</a><a href="#p9">03</a><a href="#p13">04</a><a href="#p15">Q&amp;A</a><a href="#p16" class="on">부록</a></div></div>
+  <h1 class="ptitle">제도 한 장 요약 — 2026년 요율</h1>
+  <table><colgroup><col style="width:14%"><col style="width:17%"><col style="width:21%"><col style="width:14%"><col style="width:11%"><col style="width:23%"></colgroup><thead><tr><th>제도</th><th>취지</th><th>보험료 부담</th><th>관할</th><th>신고</th><th>2026 요율·기준</th></tr></thead><tbody><tr><td>고용 — 실업급여</td><td>실직 시 생계</td><td>근로자 0.9% + 사업주 0.9%</td><td>근로복지공단</td><td>토탈서비스</td><td><strong>1.8%</strong></td></tr><tr><td>고용 — 고용안정</td><td>고용 유지·직업훈련</td><td>사업주 전액</td><td>근로복지공단</td><td>토탈서비스</td><td>0.25% ~ 0.85%</td></tr><tr><td>산재</td><td>업무상 재해 보상</td><td>사업주 전액 (임금 공제 금지)</td><td>근로복지공단</td><td>토탈서비스</td><td><strong>35/1,000</strong> 실납 36.56</td></tr><tr><td>건강</td><td>질병·의료비</td><td>각 3.595%</td><td>건강보험공단</td><td>건강EDI</td><td><strong>7.19%</strong></td></tr><tr><td>장기요양</td><td>노인 장기요양</td><td>각 1/2</td><td>건강보험공단</td><td>건강EDI</td><td><strong>0.9448%</strong></td></tr><tr><td>국민연금</td><td>노후·장애·유족</td><td>각 4.75%</td><td>국민연금공단</td><td>연금EDI</td><td><strong>9.5%</strong> 상한 659만 / 하한 41만</td></tr><tr><td>퇴직공제</td><td>일용 퇴직금 적립</td><td>사업주 (근로일수 × 일액)</td><td>건설근로자공제회</td><td>건설E음</td><td>일액 <strong>8,700</strong> · 원가 2.3%</td></tr><tr><td>KISCON</td><td>실적·하도급 투명화</td><td>—</td><td>국토교통부</td><td>KISCON</td><td>계약일 +30일</td></tr></tbody></table>
+  <blockquote><p>최저임금 시급 <strong>10,320원</strong>(2026). 건설업 실무에서 "4대보험 신고"라고 하면 위 제도를 모두 함께 관리합니다.</p></blockquote>
+  <div class="pfoot"><a class="logolink" href="#" target="_blank" rel="noopener"><span class="logo"><svg class="logo-sym" viewBox="0 0 38 29"><use href="#kbz-sym"/></svg><svg class="logo-type" viewBox="0 0 72 22" role="img" aria-label="김반장"><use href="#kbz-type"/></svg></span></a><span class="slogan">건설 4대보험·퇴직공제 해결사</span><div class="pgno"><b>17</b> / 21</div></div>
+</div>
+
+<div class="sheet" id="p18">
+  <div class="topbar"><div class="crumb"><b class="cn">부록 ②</b><span>2027년 지켜볼 변경안</span></div><div class="nav"><a href="#p3">01</a><a href="#p6">02</a><a href="#p9">03</a><a href="#p13">04</a><a href="#p15">Q&amp;A</a><a href="#p16" class="on">부록</a></div></div>
+  <h1 class="ptitle">2027년 지켜볼 변경안</h1>
+  <p class="psub">2026.9. 기준 확인분입니다.</p>
+  <div class="chg"><div class="c"><span class="tag">고용보험</span><h4>실업급여 요율 인상</h4><p class="shift"><span class="old">1.8%</span><span class="ar3">→</span>2.0%</p><p>노사 각 0.9% → <strong>1.0%</strong> · 개편안 확정('26.9.1.), '27 시행 예정</p></div><div class="c"><span class="tag">고용보험</span><h4>가입 기준 전환</h4><p class="shift"><span class="old">월 60시간</span><span class="ar3">→</span>월 보수 80만</p><p>일용·단시간 판단 기준이 바뀝니다 — 시행 세부 확인 필요</p></div><div class="c"><span class="tag">국민연금</span><h4>보험료율 인상</h4><p class="shift"><span class="old">9.5%</span><span class="ar3">→</span>10.0%</p><p>매년 0.5%p 인상 → <strong>'33년 13%</strong></p></div><div class="c"><span class="tag">퇴직공제</span><h4>전자카드 단말기 미설치 과태료 신설</h4><p class="shift"><span class="old">없음</span><span class="ar3">→</span>300만 원 이하</p><p>'26.6.18. 국회 통과, <strong>'27년 시행 예정</strong></p></div><div class="c todo"><span class="tag">🟨 확인 필요</span><h4>청년 생애최초 연금보험료 지원 · 두루누리 고시액</h4><p>'27.1. 예고 — 기획팀 확인 후 확정본에 반영</p></div></div>
+  <div class="pfoot"><a class="logolink" href="#" target="_blank" rel="noopener"><span class="logo"><svg class="logo-sym" viewBox="0 0 38 29"><use href="#kbz-sym"/></svg><svg class="logo-type" viewBox="0 0 72 22" role="img" aria-label="김반장"><use href="#kbz-type"/></svg></span></a><span class="slogan">건설 4대보험·퇴직공제 해결사</span><div class="pgno"><b>18</b> / 21</div></div>
+</div>
+
+<div class="sheet" id="p19">
+  <div class="topbar"><div class="crumb"><b class="cn">부록 ③</b><span>매월 신고 캘린더</span></div><div class="nav"><a href="#p3">01</a><a href="#p6">02</a><a href="#p9">03</a><a href="#p13">04</a><a href="#p15">Q&amp;A</a><a href="#p16" class="on">부록</a></div></div>
+  <h1 class="ptitle">매월 신고 캘린더</h1>
+  <table><colgroup><col style="width:13%"><col style="width:43%"><col style="width:44%"></colgroup><thead><tr><th>시기</th><th>할 일</th><th>포인트</th></tr></thead><tbody><tr><td><strong>1~3일</strong></td><td>현장 담당자로부터 <strong>노무대장 수령 → 검토</strong></td><td>일수·임금 확인, 대상자 판단(건강 현장별 8일 / 연금 8일·60시간·220만·사업장 합산)</td></tr><tr><td><strong>4~5일</strong></td><td>일용근로자 <strong>건강·연금 경정신고</strong></td><td>대상자 취득·상실. <strong>5일 기한</strong></td></tr><tr><td><strong>6~10일</strong></td><td><strong>경정고지서 확인 → 납부</strong>(건강·연금)</td><td>6일 고지서 발급 — 산출액과 대조 → <strong>10일 납부</strong>, 임금 원천공제 반영</td></tr><tr><td><strong>~13일</strong></td><td><strong>퇴직공제 확정신고</strong></td><td>노무대장 ↔ E음 카드 태그 일수 대사 → 수정 → 확정</td></tr><tr><td><strong>14~15일</strong></td><td><strong>퇴직공제 납부</strong> · <strong>근로내용확인신고</strong>(고용·산재, 모든 일용) · 상용 <strong>취득·상실</strong>(연금·고용·산재, 전월 발생분)</td><td>확정신고 후 고지 확인 → <strong>15일 납부</strong> / 근로내용확인은 대상자 구분 없이 전원</td></tr><tr><td><strong>임금 지급 시</strong></td><td>임금대장 작성 · 임금명세서 교부</td><td>지급일은 건설사마다 다름 — 일용도 매 지급 시</td></tr><tr><td><strong>말일</strong></td><td>일용 <strong>지급명세서</strong>(홈택스, 전월분)</td><td>미제출 가산세 <strong>1%</strong></td></tr></tbody></table>
+  <blockquote><p>상용근로자 <strong>건강보험 취득·상실은 발생일부터 14일</strong> — 날짜가 고정되지 않으므로 발생 즉시 처리합니다.</p></blockquote>
+  <div class="pfoot"><a class="logolink" href="#" target="_blank" rel="noopener"><span class="logo"><svg class="logo-sym" viewBox="0 0 38 29"><use href="#kbz-sym"/></svg><svg class="logo-type" viewBox="0 0 72 22" role="img" aria-label="김반장"><use href="#kbz-type"/></svg></span></a><span class="slogan">건설 4대보험·퇴직공제 해결사</span><div class="pgno"><b>19</b> / 21</div></div>
+</div>
+
+
+
+<div class="sheet" id="p20">
+  <div class="topbar"><div class="crumb"><b class="cn">부록 ③</b><span>매월 신고 캘린더</span></div><div class="nav"><a href="#p3">01</a><a href="#p6">02</a><a href="#p9">03</a><a href="#p13">04</a><a href="#p15">Q&amp;A</a><a href="#p16" class="on">부록</a></div></div>
+  <h1 class="ptitle">월간 캘린더에 담기지 않는 연간 업무</h1>
+  <p class="psub">매년 한 번 돌아오는 신고입니다.</p>
+  <table><colgroup><col style="width:16%"><col style="width:40%"><col style="width:44%"></colgroup><thead><tr><th>기한</th><th>신고</th><th>대상</th></tr></thead><tbody><tr><td><strong>3월 10일</strong></td><td>건강보험 <strong>보수총액신고</strong></td><td>본사(상용)</td></tr><tr><td><strong>3월 15일</strong></td><td>고용·산재 <strong>보수총액신고</strong></td><td><strong>본사가 부과고지 사업장인 경우</strong>(제조업 병행 등)</td></tr><tr><td><strong>3월 31일</strong></td><td>고용·산재 <strong>개산·확정보험료 신고</strong>(자진신고)</td><td><strong>본사가 자진신고 사업장인 경우</strong> + <strong>현장(일괄 관리번호)</strong></td></tr><tr><td><strong>5월 31일</strong></td><td>국민연금 <strong>소득총액신고</strong></td><td>본사(상용)</td></tr></tbody></table>
+  <blockquote><p>본사의 고용·산재는 <strong>부과고지(3/15) / 자진신고(3/31)</strong> 중 어느 쪽인지 먼저 확인하고, 현장(일괄)은 항상 <strong>3/31</strong>입니다.</p></blockquote>
+  <div class="pfoot"><a class="logolink" href="#" target="_blank" rel="noopener"><span class="logo"><svg class="logo-sym" viewBox="0 0 38 29"><use href="#kbz-sym"/></svg><svg class="logo-type" viewBox="0 0 72 22" role="img" aria-label="김반장"><use href="#kbz-type"/></svg></span></a><span class="slogan">건설 4대보험·퇴직공제 해결사</span><div class="pgno"><b>20</b> / 21</div></div>
+</div>
+
+<div class="sheet back" id="p21">
+  <h1 class="ptitle">우리 회사는<br>지금 제대로 하고 있을까요?</h1>
+  <p class="lead2">현장·근로자 기준으로 <strong>놓치는 신고·과태료 위험</strong>을 방지하고<br>매월 반복 업무의 <strong>소요시간을 단축</strong>해보세요.</p>
+  <div class="dia"><div class="inp"><p class="t7">김반장 노무대장 한 번 입력으로</p><p class="s7"><span>4대보험 신고</span><span>퇴직공제 대사</span><span>근로계약</span><span>출퇴근</span><span>노무비 관리</span></p></div><div class="arw5">↓</div><div class="outs"><p class="k8">보험료 산출 및 서류 자동 생성 및 전송까지 해결!</p><div class="seq"><span class="st9">근로내용<br>확인</span><span class="ar9">→</span><span class="st9">건강·연금<br>대상자</span><span class="ar9">→</span><span class="st9">퇴직공제<br>확정</span><span class="ar9">→</span><span class="st9">지급<br>명세서</span><span class="ar9">→</span><span class="st9">임금<br>명세서</span></div></div></div>
+  <div class="cta2"><div class="ctl"><span class="logo"><svg class="logo-sym" viewBox="0 0 38 29"><use href="#kbz-sym"/></svg><svg class="logo-type" viewBox="0 0 72 22" role="img" aria-label="김반장"><use href="#kbz-type"/></svg></span></div><p class="inf3"><b>1588-3818</b><span class="sep">·</span>premium@kbz.co.kr<span class="sep">·</span>www.kbz.co.kr</p><div class="qr2">QR<br>자리</div></div>
+</div>
+
+<script>
+/* 문서 상수 — 편마다 이 블록만 고치면 됩니다 */
+const DOC_REV   = "2026.10";
+const DOC_VER   = "v1.0";
+const DOC_COLOR = "c5";                        /* 표지 그라데이션 */
+const DOC_TINT  = "none";                      /* 본문 면 바탕 */
+const DOC_UTM   = "vol01-worker-classification";
+
+/* 표지 색 */
+document.querySelector('.sheet--cover')?.classList.add(DOC_COLOR);
+/* 본문 면 바탕 — 이미 지정된 면은 건너뜀 */
+document.querySelectorAll('.sheet').forEach(el=>{
+  if (el.classList.contains('sheet--cover') || el.classList.contains('back')) return;
+  if ([...el.classList].some(c=>c.startsWith('tint-'))) return;
+  el.classList.add('tint-' + DOC_TINT);
+});
+/* 로고 링크 + UTM */
+const HREF = 'https://www.kbz.co.kr/?utm_source=guidebook&utm_medium=pdf'
+           + '&utm_campaign=' + DOC_UTM + '&utm_content=logo';
+document.querySelectorAll('a.logolink').forEach(a=>{ a.href = HREF; });
+/* 발행 정보 */
+document.querySelectorAll('[data-rev]').forEach(e=>{ e.textContent = DOC_REV + ' · ' + DOC_VER; });
+document.querySelectorAll('.pubdate').forEach(e=>{ e.textContent = DOC_REV; });
+document.querySelectorAll('.docver').forEach(e=>{ e.textContent = DOC_VER; });
+</script>
+</body>
+</html>
