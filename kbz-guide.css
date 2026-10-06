@@ -351,7 +351,7 @@ padding:var(--cell-pad,2.4mm) 2mm}
 
 /* 밀도 조정 — 내용이 많은 면에만 적용 */
 .sheet.dense th,.sheet.dense td{padding:var(--cell-pad,2.4mm) 3.4mm;font-size:12.5pt;line-height:1.4}
-.sheet.dense .ptitle{margin-bottom:6mm}
+.sheet.dense .ptitle{margin-bottom:var(--t-gap,6mm)}
 .sheet.dense blockquote{padding:3.4mm 4.4mm;margin-bottom:0}
 .sheet.dense blockquote p{font-size:12.5pt;line-height:1.5}
 
@@ -503,7 +503,7 @@ padding:1mm 2.6mm;border-radius:99mm;margin-top:-.2mm}
 
 /* 제목 → 서브카피 간격 통일 */
 .ptitle:has(+ .psub),.ptitle:has(+ .lead),
-.imp-title:has(+ .imp-sub),.imp-title:has(+ .lead){margin-bottom:6mm}
+.imp-title:has(+ .imp-sub),.imp-title:has(+ .lead){margin-bottom:var(--t-gap,6mm)}
 
 /* 10면 : 표를 내용 크기로 두고 가운데 */
 
@@ -826,7 +826,7 @@ tr:has(td.sub) + tr:not(:has(td.sub)) td{border-top:.4mm solid rgba(17,90,198,.2
 /* ===== 블록 확장 (x-) ===== */
 :root{--col1:#EAF2FD;}
 .x-tb-l .x-t{font-weight:500;color:var(--blue-d)}
-.ptitle.x-has-sub{margin-bottom:5mm}
+.ptitle.x-has-sub{margin-bottom:var(--t-gap,5mm)}
 h2.x-sec{font-family:var(--font-head);font-size:18pt;font-weight:700;color:var(--blue-d);margin:0 0 3mm;line-height:1.3}
 h2.x-sec b{color:var(--blue)}
 h2.x-sec .x-em{margin-right:1.5mm}
@@ -1165,5 +1165,4 @@ td .x-sysb{margin-left:1.4mm}
 /* ===== VOL.1 넘침 교정 : 하단 브랜드 라인 확보 (2026.10) ===== */
 /* 3·4·8면에서 푸터가 지면 밖으로 밀리던 것 — 글자 크기는 그대로 두고 여백만 조임 */
 .vol1 #p3 > .banner{margin-bottom:0}
-.vol1 #p4 .ptitle{margin-bottom:var(--t-gap,4mm)}
 .vol1 #p4 .lead{margin-bottom:5mm}

@@ -358,7 +358,7 @@ padding:var(--cell-pad,2.4mm) 2mm}
 
 /* 밀도 조정 — 내용이 많은 면에만 적용 */
 .sheet.dense th,.sheet.dense td{padding:var(--cell-pad,2.4mm) 3.4mm;font-size:12.5pt;line-height:1.4}
-.sheet.dense .ptitle{margin-bottom:6mm}
+.sheet.dense .ptitle{margin-bottom:var(--t-gap,6mm)}
 .sheet.dense blockquote{padding:3.4mm 4.4mm;margin-bottom:0}
 .sheet.dense blockquote p{font-size:12.5pt;line-height:1.5}
 
@@ -510,7 +510,7 @@ padding:1mm 2.6mm;border-radius:99mm;margin-top:-.2mm}
 
 /* 제목 → 서브카피 간격 통일 */
 .ptitle:has(+ .psub),.ptitle:has(+ .lead),
-.imp-title:has(+ .imp-sub),.imp-title:has(+ .lead){margin-bottom:6mm}
+.imp-title:has(+ .imp-sub),.imp-title:has(+ .lead){margin-bottom:var(--t-gap,6mm)}
 
 /* 10면 : 표를 내용 크기로 두고 가운데 */
 
@@ -833,7 +833,7 @@ tr:has(td.sub) + tr:not(:has(td.sub)) td{border-top:.4mm solid rgba(17,90,198,.2
 /* ===== 블록 확장 (x-) ===== */
 :root{--col1:#EAF2FD;}
 .x-tb-l .x-t{font-weight:500;color:var(--blue-d)}
-.ptitle.x-has-sub{margin-bottom:5mm}
+.ptitle.x-has-sub{margin-bottom:var(--t-gap,5mm)}
 h2.x-sec{font-family:var(--font-head);font-size:18pt;font-weight:700;color:var(--blue-d);margin:0 0 3mm;line-height:1.3}
 h2.x-sec b{color:var(--blue)}
 h2.x-sec .x-em{margin-right:1.5mm}
@@ -1172,7 +1172,6 @@ td .x-sysb{margin-left:1.4mm}
 /* ===== VOL.1 넘침 교정 : 하단 브랜드 라인 확보 (2026.10) ===== */
 /* 3·4·8면에서 푸터가 지면 밖으로 밀리던 것 — 글자 크기는 그대로 두고 여백만 조임 */
 .vol1 #p3 > .banner{margin-bottom:0}
-.vol1 #p4 .ptitle{margin-bottom:var(--t-gap,4mm)}
 .vol1 #p4 .lead{margin-bottom:5mm}
 
 </style></head>
@@ -1284,7 +1283,7 @@ td .x-sysb{margin-left:1.4mm}
 <div class="pfoot"><a class="logolink" href="#" rel="noopener" target="_blank"><span class="logo"><svg class="logo-sym" viewbox="0 0 38 29"><use href="#kbz-sym"></use></svg><svg aria-label="김반장" class="logo-type" role="img" viewbox="0 0 72 22"><use href="#kbz-type"></use></svg></span></a><span class="slogan">건설 4대보험·퇴직공제 해결사</span><div class="pgno"><b>06</b> / 21</div></div>
 </div>
 </div>
-<div class="sheet tint-blue" id="p7" style="--grid-gap:2mm;--ic-pad:1.8mm">
+<div class="sheet tint-blue" id="p7">
 <div class="topbar"><div class="crumb"><b class="cn">02</b><span>위장 프리랜서로 판정되면 무엇이 청구되나요</span></div><div class="nav"><a href="#p3">01</a><a class="on" href="#p6">02</a><a href="#p9">03</a><a href="#p13">04</a><a href="#p15">Q&amp;A</a><a href="#p16">부록</a></div></div>
 <div class="side"><div class="side-l"><h1 class="imp-title">가짜 3.3% 계약 후 위장 판정 시 발생하는 위험</h1><p class="imp-sub">2025.12.~2026.3. 고용노동부 '가짜 3.3' 기획감독 : 세무자료와 노동자료를 교차 확인하는 감독이 현실화됐습니다.</p><div class="flow"><div class="fact"><p class="k2">점검한 108개소 중</p><div class="bar"><i>72개소 적발</i><b>67%</b></div><div class="one"><span class="n5">1,070명</span><span class="t5">위장 3.3 근로자 확인</span></div></div><div class="gap2"><span class="a3">↓</span><span class="c3">전원 고용·산재보험 소급 가입</span></div><div class="hit"><span class="n4">5억 2천만 원</span><span class="t4">과거 보험료 부과 (2026.7.1. 후속조치)</span></div></div></div><div class="side-r"><div class="items"><div class="itm"><p class="hd3">임금·수당 소급</p><ul><li><span>주휴수당·연차수당 재계산(<span class="hi">임금채권 3년</span>), 미지급 시 근기법 §109(3년/3천만 원)</span></li><li class="src4"><span>출역일보·이체내역으로 재산정</span></li></ul></div><div class="itm"><p class="hd3">퇴직금</p><ul><li><span>계속근로 <span class="hi">1년↑·주 15시간↑</span>이면 발생 — 1년당 30일분 평균임금, 퇴직 14일 내</span></li><li class="src4"><span>'일용' 호칭이어도 실질 계속근로면 발생</span></li></ul></div><div class="itm"><p class="hd3">근로계약서<span class="amt3">500만</span></p><ul><li><span>미작성·미교부 <span class="hi">벌금 500만 원 이하</span></span></li><li class="src4"><span>근기법 §17·§114</span></li></ul></div><div class="itm"><p class="hd3">세무 정정</p><ul><li><span>사업소득 지급명세서 취소·수정 → 근로소득(일용) 지급명세서·원천징수이행상황신고 수정 → 지방소득세 수정. <span class="hi">정액이 아니라 귀속월·가산세에 따라 다름</span></span></li><li class="src4"><span>근로자가 종합소득세 신고를 마쳤다면 근로자 측 경정도 연동</span></li></ul></div><div class="itm"><p class="hd3">퇴직공제<span class="amt3">300만</span></p><ul><li><span>근로일수 미신고·공제부금 미납 과태료 100/200/300만 원, 관계성립 미신고 <span class="hi">300/400/500만 원</span> + 소급 신고·납부</span></li><li class="src4"><span>건설근로자법 §26·시행령 별표 2</span></li></ul></div></div></div></div>
 <div class="pfoot"><a class="logolink" href="#" rel="noopener" target="_blank"><span class="logo"><svg class="logo-sym" viewbox="0 0 38 29"><use href="#kbz-sym"></use></svg><svg aria-label="김반장" class="logo-type" role="img" viewbox="0 0 72 22"><use href="#kbz-type"></use></svg></span></a><span class="slogan">건설 4대보험·퇴직공제 해결사</span><div class="pgno"><b>07</b> / 21</div></div>
