@@ -30,6 +30,13 @@ const 작은요소_허용 = new Set([
   'ar9', 'ar4', 'arw5', 'st9', 'st7', 's7', 'qr', 'qr2', 'qn', 'qn2',
   'amt3', 'x-dg', 'x-tbd', 'diacap', 'cap8', 'imgslot', 'law', 'bar',
 ])
+// 블록이 아니라 뼈대·고정 면 부품 — §5 블록 표에 올리지 않습니다
+const 뼈대 = new Set([
+  'side', 'side-l', 'side-r', 'split', 'sp-l', 'sp-r', 'x-body', 'impact',
+  'topbar', 'pfoot', 'ptitle', 'imp-title', 'psub', 'imp-sub', 'lead', 'lead2',
+  'cover', 'crumb', 'nav', 'toc-ad', 'tocwrap2', 'cta2', 'dia',
+  'svc-grid', 'svc-stat', 'svc-foot', 'printbar',
+])
 const 공통면 = ['pg-cover', 'pg-toc', 'pg-vs', 'pg-concl', 'pg-fine', 'pg-rate', 'pg-2027', 'pg-cal', 'pg-year', 'pg-back']
 // 권마다 문구가 달라지는 공통 면 — 마크업 대조에서 제외
 const 공통면_권별 = new Set(['pg-cover', 'pg-toc', 'pg-vs', 'pg-concl', 'pg-back'])
@@ -237,6 +244,18 @@ const 브라우저검사 = () => {
     })
   })
 
+  // 최상위 블록 수집 — 면 또는 뼈대 컨테이너의 직계 자식 (§5 등재 확인용)
+  out.블록 = {}
+  document.querySelectorAll('.sheet').forEach(s => {
+    const 통 = [s, ...s.querySelectorAll('.x-body, .side-l, .side-r, .sp-l, .sp-r')]
+    통.forEach(c => [...c.children].forEach(e => {
+      const 이름 = e.tagName === 'TABLE' ? 'table' : e.tagName === 'BLOCKQUOTE' ? 'blockquote'
+        : (e.className || '').split(/\s+/).find(t => t && !/^(x-has-sub|tint-|dense)/.test(t))
+      if (!이름) return
+      ;(out.블록[이름] ||= []).push(s.id)
+    }))
+  })
+
   // 글자 크기 — 11pt 미만은 예외 없음, 11~12pt 는 작은 라벨·배지·칩·아이콘만
   const 본 = new Set()
   document.querySelectorAll('.sheet *').forEach(e => {
@@ -301,6 +320,11 @@ async function 실행() {
   if (!fs.existsSync(cssPath)) { console.error(`kbz-guide.css 를 찾지 못했습니다: ${cssPath}`); process.exit(2) }
   const css = fs.readFileSync(cssPath, 'utf8')
 
+  // 조판지시서 — §5 블록 표 등재 확인에 씁니다
+  const 지시서경로 = fs.readdirSync(뿌리).find(f => /_01_/.test(f) && f.endsWith('.md'))
+  const 지시서 = 지시서경로 ? fs.readFileSync(path.join(뿌리, 지시서경로), 'utf8') : ''
+  if (!지시서) console.error('  (조판지시서 md 를 찾지 못해 블록 등재 검사는 건너뜁니다)')
+
   if (!기준경로) {
     const 후보 = fs.readdirSync(뿌리).filter(f => /^VOL1.*\.html$/.test(f))
     if (후보.length) 기준경로 = path.join(뿌리, 후보[0])
@@ -350,6 +374,14 @@ async function 실행() {
         더하기('크기', 이름, c.id, `${c.pt}pt 「${c.글자}」(.${토큰.join('.') || '?'}) — 11pt 예외는 작은 라벨·배지·칩·아이콘뿐입니다`)
     }
 
+    // §5 블록 표에 올라 있는가 — 이름만 x- 로 짓고 등재를 빠뜨리면 다음 권이 또 새로 짭니다
+    for (const [이름, 면] of Object.entries(r.블록)) {
+      if (뼈대.has(이름) || /^(pg-|sheet|back|cover)/.test(이름)) continue
+      if (!지시서 || 지시서.includes('`' + 이름 + '`')) continue
+      더하기('블록등재', 이름, [...new Set(면)].slice(0, 4).join(' '),
+        `${이름} — 조판지시서 §5 블록 표에 없습니다. 어떤 성격의 정보에 쓰는 블록인지 올리세요`)
+    }
+
     for (const d of r.도해) {
       if (d.최소pt != null && d.최소pt < 11.995)
         더하기('도해', 이름, d.id, `글자 ${d.최소pt}pt 「${d.글자}」 — 좁으면 축소하지 말고 다시 그립니다`)
@@ -362,7 +394,7 @@ async function 실행() {
   await b.close()
 
   /* 보고 */
-  const 순서 = ['CSS', '구조', '넘침', '크기', '도해', '변수', '상단바', '목차', '공통면', '고정면', '금지', '제목위치', '주의']
+  const 순서 = ['CSS', '구조', '넘침', '크기', '도해', '변수', '블록등재', '상단바', '목차', '공통면', '고정면', '금지', '제목위치', '주의']
   결과.sort((a, b) => 순서.indexOf(a.갈래) - 순서.indexOf(b.갈래))
   if (!결과.length) {
     console.log('\n  어긋난 곳이 없습니다.\n')
