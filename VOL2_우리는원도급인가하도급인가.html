@@ -498,7 +498,7 @@ padding:1mm 2.6mm;border-radius:99mm;margin-top:-.2mm}
 .vol1 #p5 .cases .stack{flex:0 0 auto}
 .vol1 #p5 > .vs{flex:0 0 auto;margin-top:auto;margin-bottom:0}
 .vol1 #p5 > .cases{flex:0 0 auto;margin-bottom:auto}
-.vol1 #p8 .ck{padding:4.2mm 5mm}
+.vol1 #p8 .ck{padding:3.8mm 5mm}
 
 .vol1 #p8 blockquote{padding:3.2mm 4mm;margin-bottom:3mm}
 .vol1 #p8 blockquote p{font-size:12.5pt;line-height:1.45}
@@ -1168,6 +1168,13 @@ ul.x-bl.x-lg li{font-size:14pt}
 .x-sysb{display:inline-flex;align-items:center;gap:1.2mm;font-family:var(--font-head);font-weight:700;font-size:12pt;color:#fff;border-radius:1.4mm;padding:.4mm 2.4mm;line-height:1.4;vertical-align:.2mm}
 .x-sysb::before{content:"";width:1.6mm;height:1.6mm;border-radius:50%;background:rgba(255,255,255,.85)}
 td .x-sysb{margin-left:1.4mm}
+
+/* ===== VOL.1 넘침 교정 : 하단 브랜드 라인 확보 (2026.10) ===== */
+/* 3·4·8면에서 푸터가 지면 밖으로 밀리던 것 — 글자 크기는 그대로 두고 여백만 조임 */
+.vol1 #p3 > .banner{margin-bottom:0}
+.vol1 #p4 .ptitle{margin-bottom:var(--t-gap,4mm)}
+.vol1 #p4 .lead{margin-bottom:5mm}
+.vol1 #p4 th,.vol1 #p4 td{padding:2mm 3.4mm}
 
 </style></head>
 <body class="vol2">
