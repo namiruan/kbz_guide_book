@@ -420,7 +420,7 @@ border-top:.3mm solid rgba(0,0,0,.06)}
 /* ===== flow : 사실 카드 → 결과 카드 ===== */
 .flow{background:transparent;border:none;padding:0;margin:0;max-width:72mm}
 .flow .fact{background:#fff;border:.35mm solid var(--line);border-radius:2mm;padding:3.6mm 4mm}
-.flow .fact .k2{font-size:11.5pt;font-weight:600;color:var(--ink-3);margin:0 0 1.6mm}
+.flow .fact .k2{font-size:12pt;font-weight:600;color:var(--ink-3);margin:0 0 1.6mm}
 .flow .bar{height:7.2mm;border-radius:1mm;background:#DFE9F7;overflow:hidden;
 display:flex;align-items:center}
 .flow .bar i{display:flex;align-items:center;height:100%;background:var(--blue);
@@ -432,15 +432,15 @@ font-size:11.5pt;font-weight:700;color:var(--ink-3)}
 padding-top:3mm;border-top:.3mm solid var(--line)}
 .flow .fact .n5{font-family:var(--font-head);font-size:17pt;font-weight:900;
 letter-spacing:-.04em;line-height:1;color:var(--blue-d);white-space:nowrap}
-.flow .fact .t5{font-size:11.5pt;line-height:1.35;color:var(--ink-2)}
+.flow .fact .t5{font-size:12pt;line-height:1.35;color:var(--ink-2)}
 .flow .gap2{display:flex;flex-direction:column;align-items:center;gap:.8mm;margin:2.6mm 0}
 .flow .gap2 .a3{color:var(--blue);font-size:14pt;line-height:1}
-.flow .gap2 .c3{font-size:11.5pt;color:var(--ink-2);text-align:center;line-height:1.35}
+.flow .gap2 .c3{font-size:12pt;color:var(--ink-2);text-align:center;line-height:1.35}
 .flow .hit{background:var(--blue);border-radius:2mm;padding:4mm;
 display:flex;flex-direction:column;align-items:center;gap:1.2mm;text-align:center}
 .flow .hit .n4{font-family:var(--font-head);font-size:22pt;font-weight:900;
 letter-spacing:-.04em;line-height:1;color:#fff}
-.flow .hit .t4{font-size:11.5pt;line-height:1.35;color:rgba(255,255,255,.85)}
+.flow .hit .t4{font-size:12pt;line-height:1.35;color:rgba(255,255,255,.85)}
 
 /* ===== items : 제목 좌 · 불릿 우 ===== */
 .items{display:flex;flex-direction:column;gap:var(--item-gap,0);margin:0;overflow:hidden}
@@ -539,10 +539,10 @@ padding-top:2mm;margin-top:2mm}
 .pg-vs .vs .hd.ng .ic{background:var(--blue)}
 .pg-vs .vs .hd.ng .t{color:var(--blue-d)}
 .pg-vs .vs .cell.ng{background:#F5FAFF;border-top-color:rgba(17,90,198,.18)}
-.pg-vs .vs{grid-template-columns:1fr 32mm 1fr}
-.pg-vs .vs .cell{padding:2mm 5mm}
-.pg-vs .vs .lb{padding:2mm 1.6mm}
-.pg-vs .vs .hd{padding:2.4mm 5mm}
+.pg-vs .vs{grid-template-columns:1fr var(--vs-mid,32mm) 1fr}
+.pg-vs .vs .cell{padding:var(--cell-pad,2mm) 5mm}
+.pg-vs .vs .lb{padding:var(--cell-pad,2mm) 1.6mm}
+.pg-vs .vs .hd{padding:var(--hd-pad,2.4mm) 5mm}
 .pg-vs{--t-gap:4mm;--f-gap:5mm}
 
 /* ===== 서비스 소개 블록 ===== */
@@ -935,7 +935,7 @@ ul.x-bl.x-lg li{font-size:14pt}
 .x-nsec .x-df{font-size:13.5pt;line-height:1.62}
 .x-nsec .x-df b{color:var(--blue-d)}
 .x-nsec .x-df.x-sub{border-top:1px dashed rgba(17,90,198,.25);padding-top:3mm}
-.x-org.x-dA{width:160mm;height:62mm}
+.x-org.x-dA{width:206mm;height:79.83mm}
 .x-org.x-dB{width:160mm;height:48mm}
 .x-org.x-dC{width:160mm;height:40mm}
 .x-org .x-k2 .x-t{fill:#fff}
@@ -944,7 +944,6 @@ ul.x-bl.x-lg li{font-size:14pt}
 .x-nsec.v{grid-template-columns:1fr;gap:7mm;align-content:start;align-items:start;padding-top:0}
 .x-nsec.v .x-nr{display:flex;justify-content:center}
 .x-nsec.v .x-nlst{display:flex;flex-direction:column;gap:0}
-.x-nsec.v .x-org.x-dA{width:206mm;height:79.8mm}
 .x-nsec h2.x-sec{font-size:22pt;gap:3mm;align-items:center}
 .x-nsec h2.x-sec .x-dg{font-size:14.5pt;padding:.6mm 3.6mm}
 .x-nsec.v h2.x-sec{margin-bottom:1mm}

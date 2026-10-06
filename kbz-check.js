@@ -28,7 +28,7 @@ try {
 const 작은요소_허용 = new Set([
   'k', 'lb', 'tag', 'yn', 'cite', 'src', 'src2', 'src4', 'ic', 'mk', 'no2',
   'ar9', 'ar4', 'arw5', 'st9', 'st7', 's7', 'qr', 'qr2', 'qn', 'qn2',
-  'amt3', 'x-dg', 'x-tbd', 'diacap', 'cap8', 'imgslot', 'law', 'k2',
+  'amt3', 'x-dg', 'x-tbd', 'diacap', 'cap8', 'imgslot', 'law', 'bar',
 ])
 const 공통면 = ['pg-cover', 'pg-toc', 'pg-vs', 'pg-concl', 'pg-fine', 'pg-rate', 'pg-2027', 'pg-cal', 'pg-year', 'pg-back']
 // 권마다 문구가 달라지는 공통 면 — 마크업 대조에서 제외
